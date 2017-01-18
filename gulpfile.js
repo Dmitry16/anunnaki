@@ -15,15 +15,17 @@ var gulp        = require('gulp'),
 	autoprefixer= require('gulp-autoprefixer');
 
 gulp.task('clean', ['sass'], function() {
-  return gulp.src(['production/css', 'production/js', 'production/images'], {read: false})
+  return gulp.src(['app/production/css', 'app/production/js', 
+  	'app/production/images'], {read: false})
     .pipe(clean());
 });
 
 gulp.task('styles', ['clean'], function() {
-    return gulp.src(['app/css/*sydney-main.css', 
-    	'app/css/*sydney-child.css',
-    	'app/css/main.css',])
-    	.pipe(concat('styles.min.css'))
+    return gulp.src([ 
+    	'app/css/foundation.css',
+    	'app/css/normalize.css',
+    	'app/css/front.css'])
+    	.pipe(concat('todo.min.css'))
         .pipe(minifyCSS({
             keepBreaks: true
         }))
@@ -33,8 +35,7 @@ gulp.task('styles', ['clean'], function() {
 gulp.task('sass', function(){
 	return	gulp.src('app/sass/**/*.scss')
 		.pipe(sass())
-		.pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], 
-			{ cascade: true }))
+		//.pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], { cascade: true }))
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({stream: true}));
 });
