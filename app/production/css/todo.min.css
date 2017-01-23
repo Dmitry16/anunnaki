@@ -897,7 +897,7 @@ a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
 h1{font-size:2em;margin:.67em 0}
 mark{background:#ff0;color:#000}
-.icon,.section1,.section2,body{background-size:10px 10px}
+.icon,.section1,.section2,body{background-size:10px,20px,30px,60px}
 small{font-size:80%}
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sup{top:-.5em}
@@ -921,11 +921,11 @@ fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 .icons-wrapper a,.section1,.section2{display:flex;text-align:center;border:1px solid gray}
 optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
-body{margin:5%;background-image:radial-gradient(closest-side,transparent 0,transparent 75%,#B6CC66 76%,#B6CC66 85%,#EDFFDB 86%,#EDFFDB 94%,#FFF 95%,#FFF 103%,#D9E6A7 104%,#D9E6A7 112%,#798B3C 113%,#798B3C 121%,#FFF 122%,#FFF 130%,#E0EAD7 131%,#E0EAD7 140%),radial-gradient(closest-side,transparent 0,transparent 75%,#B6CC66 76%,#B6CC66 85%,#EDFFDB 86%,#EDFFDB 94%,#FFF 95%,#FFF 103%,#D9E6A7 104%,#D9E6A7 112%,#798B3C 113%,#798B3C 121%,#FFF 122%,#FFF 130%,#E0EAD7 131%,#E0EAD7 140%);background-color:#C8D3A7;background-position:0 0,55px 5}
+body{margin:5%;background-color:#fda;background-image:linear-gradient(90deg,rgba(255,255,255,.07) 50%,transparent 50%),linear-gradient(90deg,rgba(255,255,255,.13) 50%,transparent 50%),linear-gradient(90deg,transparent 50%,rgba(255,255,255,.17) 50%),linear-gradient(90deg,transparent 50%,rgba(255,255,255,.19) 50%)}
 .title-front h3{color:#4682b4}
-.section1,.section2{background-color:silver;background-image:radial-gradient(circle at 100% 150%,silver 24%,#fff 25%,#fff 28%,silver 29%,silver 36%,#fff 36%,#fff 40%,transparent 40%,transparent),radial-gradient(circle at 0 150%,silver 24%,#fff 25%,#fff 28%,silver 29%,silver 36%,#fff 36%,#fff 40%,transparent 40%,transparent),radial-gradient(circle at 50% 100%,#fff 10%,silver 11%,silver 23%,#fff 24%,#fff 30%,silver 31%,silver 43%,#fff 44%,#fff 50%,silver 51%,silver 63%,#fff 64%,#fff 71%,transparent 71%,transparent),radial-gradient(circle at 100% 50%,#fff 5%,silver 6%,silver 15%,#fff 16%,#fff 20%,silver 21%,silver 30%,#fff 31%,#fff 35%,silver 36%,silver 45%,#fff 46%,#fff 49%,transparent 50%,transparent),radial-gradient(circle at 0 50%,#fff 5%,silver 6%,silver 15%,#fff 16%,#fff 20%,silver 21%,silver 30%,#fff 31%,#fff 35%,silver 36%,silver 45%,#fff 46%,#fff 49%,transparent 50%,transparent);margin:0 0 5%;flex-direction:column;justify-content:center;overflow:hidden}
+.section1,.section2{background-color:#d2f8d2;background-image:linear-gradient(0deg,rgba(255,255,255,.07) 50%,transparent 50%),linear-gradient(0deg,rgba(255,255,255,.13) 50%,transparent 50%),linear-gradient(0deg,transparent 50%,rgba(255,255,255,.17) 50%),linear-gradient(0deg,transparent 50%,rgba(255,255,255,.19) 50%);margin:0 0 5%;flex-direction:column;justify-content:center;overflow:hidden}
 .icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center}
 .icons-wrapper a{flex-direction:column;justify-content:center;width:26%;margin:5% 1%}
-.icon{background-image:radial-gradient(closest-side,transparent 0,transparent 75%,#B6CC66 76%,#B6CC66 85%,#EDFFDB 86%,#EDFFDB 94%,#FFF 95%,#FFF 103%,#D9E6A7 104%,#D9E6A7 112%,#798B3C 113%,#798B3C 121%,#FFF 122%,#FFF 130%,#E0EAD7 131%,#E0EAD7 140%),radial-gradient(closest-side,transparent 0,transparent 75%,#B6CC66 76%,#B6CC66 85%,#EDFFDB 86%,#EDFFDB 94%,#FFF 95%,#FFF 103%,#D9E6A7 104%,#D9E6A7 112%,#798B3C 113%,#798B3C 121%,#FFF 122%,#FFF 130%,#E0EAD7 131%,#E0EAD7 140%);background-color:#C8D3A7;background-position:0 0,55px 55px}
+.icon{background-color:#ffcab6;background-image:linear-gradient(90deg,rgba(255,255,255,.07) 50%,transparent 50%),linear-gradient(90deg,rgba(255,255,255,.13) 50%,transparent 50%),linear-gradient(90deg,transparent 50%,rgba(255,255,255,.17) 50%),linear-gradient(90deg,transparent 50%,rgba(255,255,255,.19) 50%)}
 svg#svg1{position:absolute;z-index:-1;opacity:.5;border:1px solid red;width:100%;height:auto}
 svg#svg1 line{stroke:#4682b4;stroke-width:1}
