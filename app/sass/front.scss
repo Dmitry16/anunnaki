@@ -1,11 +1,72 @@
+$c1 : #fda;
+$c2 : steelblue;
+
 body {
-	background: #fda;
+	margin: 5%;
+background-color: lighten($c2, 30%);
+background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, lightgray 0px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
 }
-.seccion1 {
-	margin: 10% 0 5% 0;
+.title-front h3 {
+	color: $c2;
+}
+.section1, .section2 {
+background-color: #fda;
+background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70px 120px;
+
+	margin: 0% 0 5% 0;
 	border: 1px solid gray;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	overflow: hidden;
+}
+.icons-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.icons-wrapper a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 26%;
+	border: 1px solid gray;
+	margin: 5% 1%; 
+}
+.icon {
+
+background: #fda;
+background: 
+linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,
+linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,
+#fda;
+background-size: 15px 30px
+
+}
+svg#svg1 {
+	position: absolute;
+	z-index: -1;
+	opacity: 0.5;
+	border: 1px solid red;
+	width: 100%;
+	height: auto;
+
+	& line {
+		stroke: steelblue;
+		stroke-width: 1;
+	}
 }
