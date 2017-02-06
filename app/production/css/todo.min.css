@@ -379,7 +379,7 @@ meta.foundation-mq-topbar{font-family:"/only screen and (min-width:40.063em)/";w
 .no-js .top-bar-section .has-dropdown:hover>.dropdown{display:block;height:auto;width:auto;overflow:visible;clip:auto;position:absolute!important}
 }
 .panel.callout>:first-child,.panel>:first-child{margin-top:0}
-.panel,.panel.callout{border-width:1px;padding:1.25rem;border-style:solid}
+.panel,.panel.callout{border-style:solid;border-width:1px;padding:1.25rem}
 .panel h1,.panel h2,.panel h3,.panel h4,.panel h5,.panel h6,.panel p,.panel.callout h1,.panel.callout h2,.panel.callout h3,.panel.callout h4,.panel.callout h5,.panel.callout h6,.panel.callout p{color:#333}
 .panel{border-color:#d8d8d8;margin-bottom:1.25rem;background:#f2f2f2}
 .panel>:last-child{margin-bottom:0}
@@ -916,15 +916,16 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
 input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
-.icons-wrapper a,.ofertas,.section1{display:flex;text-align:center;border:1px solid gray}
 optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
 a,h1,h2,h3,h4,h5,h6,p{font-family:Catamaran,sans-serif}
-body{margin:10% 0 5%;background-color:#8abcfc}
+body{margin:10% 0 5%;background-color:#b2dfa3}
 .title-front h3{color:#4682b4}
-.ofertas,.section1{background-color:rgba(255,255,255,.7);width:100%;margin:0 0 10%;padding:3% 0 0;flex-direction:column;justify-content:center;overflow:hidden}
-.icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center}
-.icons-wrapper a{flex-direction:column;justify-content:center;width:26%;margin:5% 1%}
-.icon{background-color:#ffcab6;padding:8% 0 5%}
+.about,.ofertas,.portfolio,.section1{background-color:rgba(255,255,255,.7);width:100%;margin:0 0 10%;padding:5% 0;border:1px solid gray;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
+.icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center;margin:3% 0 0}
+.icons-wrapper a{display:flex;flex-direction:column;justify-content:center;text-align:center;width:26%;border:1px solid gray;margin:5% 1%}
+.icon{background-color:#ffdcd0;padding:8% 0 5%}
+.portfolio .icons-wrapper a,.section1 .icons-wrapper a{margin:.5%}
+.about .icons-wrapper a{width:48%;margin:5px}
 p.icon_title{font-size:30px}
 [class^=icon-]{font-size:5em}

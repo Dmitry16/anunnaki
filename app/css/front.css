@@ -3,16 +3,16 @@ a, p, h1, h2, h3, h4, h5, h6 {
 
 body {
   margin: 10% 0 5%;
-  background-color: #8abcfc; }
+  background-color: #b2dfa3; }
 
 .title-front h3 {
   color: steelblue; }
 
-.section1, .ofertas {
+.section1, .ofertas, .about, .portfolio {
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   margin: 0% 0 10% 0;
-  padding: 3% 0 0 0;
+  padding: 5% 0 5% 0;
   border: 1px solid gray;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,8 @@ body {
 .icons-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin: 3% 0 0 0; }
 
 .icons-wrapper a {
   display: flex;
@@ -35,8 +36,15 @@ body {
   margin: 5% 1%; }
 
 .icon {
-  background-color: #ffcab6;
+  background-color: #ffdcd0;
   padding: 8% 0 5%; }
+
+.section1 .icons-wrapper a, .portfolio .icons-wrapper a {
+  margin: 0.5%; }
+
+.about .icons-wrapper a {
+  width: 48%;
+  margin: 5px; }
 
 p.icon_title {
   font-size: 30px; }

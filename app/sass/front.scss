@@ -12,16 +12,16 @@ a, p, h1, h2, h3, h4, h5, h6 {
 }
 body {
 	margin: 10% 0 5%;
-	background-color: #8abcfc;
+	background-color: lighten(#73c458,20%);
 }
 .title-front h3 {
 	color: $c2;
 }
-.section1, .ofertas {
+.section1, .ofertas, .about, .portfolio {
 	background-color: rgba(#fff,.7);
 	width: 100%;
 	margin: 0% 0 10% 0;
-	padding: 3% 0 0 0;
+	padding: 5% 0 5% 0;
 	border: 1px solid gray;
 	display: flex;
 	flex-direction: column;
@@ -33,6 +33,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+  margin: 3% 0 0 0;
 }
 .icons-wrapper a {
 	display: flex;
@@ -44,10 +45,16 @@ body {
 	margin: 5% 1%;
 }
 .icon {
-background-color: lighten(coral,20%);
-padding: 8% 0 5%;
+  background-color: lighten(coral, 25%);
+  padding: 8% 0 5%;
 }
-
+.section1 .icons-wrapper a, .portfolio .icons-wrapper a  {
+  margin: 0.5%;
+}
+.about .icons-wrapper a {
+  width: 48%;
+  margin: 5px;
+}
 p.icon_title {
 	font-size: 30px;
 }
