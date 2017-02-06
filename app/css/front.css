@@ -3,13 +3,16 @@ a, p, h1, h2, h3, h4, h5, h6 {
 
 body {
   margin: 10% 0 5%;
-  background-color: #d2ecc9; }
+  background-color: #c5dffb; }
 
 .title-front h3 {
-  color: steelblue; }
+  font-weight: 500; }
+
+.title-front h3, .offer-text, h3.icon_title {
+  color: #3f75a2; }
 
 .section1, .ofertas, .about, .portfolio {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.4);
   width: 100%;
   margin: 0% 0 10% 0;
   padding: 5% 0 5% 0;
@@ -36,15 +39,15 @@ body {
   margin: 5% 1%; }
 
 .icon {
-  background-color: #e9f0f6;
-  padding: 8% 0 5%; }
+  background-color: #d3f3cf;
+  padding: 8% 1% 5%; }
 
 .icon:hover {
-  background-color: #d7e4ef; }
+  background-color: #c1edbb; }
 
 [class^=icon-] {
   font-size: 5em;
-  color: rgba(153, 0, 0, 0.7); }
+  color: rgba(179, 0, 0, 0.7); }
 
 .icon [class^=icon-]:hover {
   font-size: 5em;
@@ -58,8 +61,9 @@ body {
   margin: 5px; }
 
 p.icon_title {
-  font-size: 30px;
-  color: steelblue; }
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #3f75a2; }
 
 ul.offer-text {
   list-style: none; }

@@ -919,15 +919,16 @@ fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
 a,h1,h2,h3,h4,h5,h6,p{font-family:Catamaran,sans-serif}
-body{margin:10% 0 5%;background-color:#d2ecc9}
-.title-front h3{color:#4682b4}
-.about,.ofertas,.portfolio,.section1{background-color:rgba(255,255,255,.7);width:100%;margin:0 0 10%;padding:5% 0;border:1px solid gray;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
+body{margin:10% 0 5%;background-color:#c5dffb}
+.title-front h3{font-weight:500}
+.offer-text,.title-front h3,h3.icon_title{color:#3f75a2}
+.about,.ofertas,.portfolio,.section1{background-color:rgba(255,255,255,.4);width:100%;margin:0 0 10%;padding:5% 0;border:1px solid gray;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
 .icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center;margin:3% 0 0}
 .icons-wrapper a{display:flex;flex-direction:column;justify-content:center;text-align:center;width:26%;border:1px solid gray;margin:5% 1%}
-.icon{background-color:#e9f0f6;padding:8% 0 5%}
-.icon:hover{background-color:#d7e4ef}
-[class^=icon-]{font-size:5em;color:rgba(153,0,0,.7)}
+.icon{background-color:#d3f3cf;padding:8% 1% 5%}
+.icon:hover{background-color:#c1edbb}
+[class^=icon-]{font-size:5em;color:rgba(179,0,0,.7)}
 .icon [class^=icon-]:hover{font-size:5em;color:#c00}
 .portfolio .icons-wrapper a,.section1 .icons-wrapper a{margin:.5%}
 .about .icons-wrapper a{width:48%;margin:5px}
-p.icon_title{font-size:30px;color:#4682b4}
+p.icon_title{font-size:1.5em;font-weight:300;color:#3f75a2}

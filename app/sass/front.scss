@@ -1,5 +1,5 @@
 $c1 : #fda;
-$c2 : steelblue;
+$c2 : darken(steelblue,5%); //fonts
 a, p, h1, h2, h3, h4, h5, h6 {
 //font-family: 'Roboto', sans-serif;
 // font-family: 'Indie Flower', cursive;
@@ -12,13 +12,16 @@ a, p, h1, h2, h3, h4, h5, h6 {
 }
 body {
 	margin: 10% 0 5%;
-	background-color: lighten(#73c458,30%);
+	background-color: lighten(#96c5f7,10%);
 }
 .title-front h3 {
+  font-weight: 500;
+}
+.title-front h3, .offer-text, h3.icon_title {
 	color: $c2;
 }
 .section1, .ofertas, .about, .portfolio {
-	background-color: rgba(#fff,.7);
+	background-color: lighten(rgba(#fff,.4),0%);
 	width: 100%;
 	margin: 0% 0 10% 0;
 	padding: 5% 0 5% 0;
@@ -45,15 +48,15 @@ body {
 	margin: 5% 1%;
 }
 .icon {
-  background-color: lighten(steelblue, 45%);
-  padding: 8% 0 5%;
+  background-color: lighten(#aee8a7, 10%);
+  padding: 8% 1% 5%;
 }
 .icon:hover {
-  background-color: lighten(steelblue, 40%);
+  background-color: lighten(#aee8a7, 5%);
 }
 [class^=icon-] {
 	font-size: 5em;
-  color: rgba(darken(red, 20%), .7);
+  color: rgba(darken(red, 15%), .7);
 }
 .icon [class^=icon-]:hover {
 	font-size: 5em;
@@ -67,7 +70,8 @@ body {
   margin: 5px;
 }
 p.icon_title {
-	font-size: 30px;
+	font-size: 1.5em;
+  font-weight: 300;
   color: $c2;
 }
 ul.offer-text {
