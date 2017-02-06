@@ -3,7 +3,7 @@ a, p, h1, h2, h3, h4, h5, h6 {
 
 body {
   margin: 10% 0 5%;
-  background-color: #b2dfa3; }
+  background-color: #d2ecc9; }
 
 .title-front h3 {
   color: steelblue; }
@@ -36,8 +36,19 @@ body {
   margin: 5% 1%; }
 
 .icon {
-  background-color: #ffdcd0;
+  background-color: #e9f0f6;
   padding: 8% 0 5%; }
+
+.icon:hover {
+  background-color: #d7e4ef; }
+
+[class^=icon-] {
+  font-size: 5em;
+  color: rgba(153, 0, 0, 0.7); }
+
+.icon [class^=icon-]:hover {
+  font-size: 5em;
+  color: #cc0000; }
 
 .section1 .icons-wrapper a, .portfolio .icons-wrapper a {
   margin: 0.5%; }
@@ -47,10 +58,8 @@ body {
   margin: 5px; }
 
 p.icon_title {
-  font-size: 30px; }
-
-[class^=icon-] {
-  font-size: 5em; }
+  font-size: 30px;
+  color: steelblue; }
 
 ul.offer-text {
   list-style: none; }
