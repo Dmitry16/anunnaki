@@ -1,29 +1,27 @@
 $c1 : #fda;
 $c2 : steelblue;
-
+a, p, h1, h2, h3, h4, h5, h6 {
+//font-family: 'Roboto', sans-serif;
+// font-family: 'Indie Flower', cursive;
+ //font-family: 'Oxygen', sans-serif;
+ font-family: 'Catamaran', sans-serif;
+ //font-family: 'Inconsolata', monospace;
+ //font-family: 'Quicksand', sans-serif;
+ //font-family: 'Permanent Marker', cursive;
+//font-family: 'Open Sans', sans-serif;
+}
 body {
-	margin: 5%;
-background-color: #fda;
-background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-background-size: 10px, 20px, 30px, 60px;
-
+	margin: 10% 0 5%;
+	background-color: #8abcfc;
 }
 .title-front h3 {
 	color: $c2;
 }
-.section1, .section2 {
-background-color: lighten(lightgreen,15%);
-background-image: linear-gradient(0deg, rgba(255,255,255,.07) 50%, transparent 50%),
-linear-gradient(0deg, rgba(255,255,255,.13) 50%, transparent 50%),
-linear-gradient(0deg, transparent 50%, rgba(255,255,255,.17) 50%),
-linear-gradient(0deg, transparent 50%, rgba(255,255,255,.19) 50%);
-background-size: 10px, 20px, 30px, 60px;
-
-
-	margin: 0% 0 5% 0;
+.section1, .ofertas {
+	background-color: rgba(#fff,.7);
+	width: 100%;
+	margin: 0% 0 10% 0;
+	padding: 3% 0 0 0;
 	border: 1px solid gray;
 	display: flex;
 	flex-direction: column;
@@ -47,23 +45,16 @@ background-size: 10px, 20px, 30px, 60px;
 }
 .icon {
 background-color: lighten(coral,20%);
-background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-background-size: 10px, 20px, 30px, 60px;
-
+padding: 8% 0 5%;
 }
-svg#svg1 {
-	position: absolute;
-	z-index: -1;
-	opacity: 0.5;
-	border: 1px solid red;
-	width: 100%;
-	height: auto;
 
-	& line {
-		stroke: steelblue;
-		stroke-width: 1;
-	}
+p.icon_title {
+	font-size: 30px;
+}
+
+[class^=icon-] {
+	font-size: 5em;
+} 
+ul.offer-text {
+	list-style: none;
 }
