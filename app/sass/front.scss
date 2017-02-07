@@ -1,37 +1,6 @@
 $c1 : #fda;
 $c2 : darken(steelblue,5%); //fonts
-a, p, h1, h2, h3, h4, h5, h6 {
-//font-family: 'Roboto', sans-serif;
-// font-family: 'Indie Flower', cursive;
- //font-family: 'Oxygen', sans-serif;
- font-family: 'Catamaran', sans-serif;
- //font-family: 'Inconsolata', monospace;
- //font-family: 'Quicksand', sans-serif;
- //font-family: 'Permanent Marker', cursive;
-//font-family: 'Open Sans', sans-serif;
-}
-body {
-	margin: 10% 0 5%;
-	background-color: lighten(#96c5f7,10%);
-}
-.title-front h3 {
-  font-weight: 500;
-}
-.title-front h3, .offer-text, h3.icon_title {
-	color: $c2;
-}
-.section1, .ofertas, .about, .portfolio {
-	background-color: lighten(rgba(#fff,.4),0%);
-	width: 100%;
-	margin: 0% 0 10% 0;
-	padding: 5% 0 5% 0;
-	border: 1px solid gray;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	overflow: hidden;
-}
+
 .icons-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -52,7 +21,7 @@ body {
   padding: 8% 1% 5%;
 }
 .icon:hover {
-  background-color: lighten(#aee8a7, 5%);
+  background-color: lighten(#aee8a7, 12%);
 }
 [class^=icon-] {
 	font-size: 5em;
@@ -68,11 +37,6 @@ body {
 .about .icons-wrapper a {
   width: 48%;
   margin: 5px;
-}
-p.icon_title {
-	font-size: 1.5em;
-  font-weight: 300;
-  color: $c2;
 }
 ul.offer-text {
 	list-style: none;

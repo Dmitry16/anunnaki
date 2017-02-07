@@ -1,0 +1,37 @@
+body {
+	margin: 10% 0 5%;
+	background-color: lighten(#96c5f7,10%);
+}
+a, p, h1, h2, h3, h4, h5, h6 {
+//font-family: 'Roboto', sans-serif;
+// font-family: 'Indie Flower', cursive;
+ //font-family: 'Oxygen', sans-serif;
+ font-family: 'Catamaran', sans-serif;
+ //font-family: 'Inconsolata', monospace;
+ //font-family: 'Quicksand', sans-serif;
+ //font-family: 'Permanent Marker', cursive;
+//font-family: 'Open Sans', sans-serif;
+}
+.section1, .ofertas, .about, .portfolio {
+	background-color: lighten(rgba(#fff,.4),0%);
+	width: 100%;
+	margin: 0% 0 10% 0;
+	padding: 5% 0 5% 0;
+	border: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+p.icon_title {
+	font-size: 1.5em;
+  font-weight: 300;
+  color: $c2;
+}
+.title-front h3 {
+  font-weight: 500;
+}
+.title-front h3, .offer-text, h3.icon_title {
+	color: $c2;
+}
