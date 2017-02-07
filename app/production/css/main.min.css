@@ -926,7 +926,7 @@ p.icon_title{font-size:1.5em;font-weight:300}
 .title-front h3{font-weight:500}
 .icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center;margin:3% 0 0}
 .icons-wrapper a{display:flex;flex-direction:column;justify-content:center;text-align:center;width:26%;border:1px solid #aaa;margin:5% 1%}
-.icon{background-color:rgba(230,248,228,.7);padding:8% 1% 5%}
+.icon{height:100%;background-color:#e9f0f6;padding:8% 1% 5%}
 .icon:hover{background-color:#dbf5d8}
 [class^=icon-]{font-size:5em;color:rgba(179,0,0,.7)}
 .icon [class^=icon-]:hover{font-size:5em;color:#c00}

@@ -17,7 +17,8 @@ $c2 : darken(steelblue,5%); //fonts
 	margin: 5% 1%;
 }
 .icon {
-  background-color: rgba(lighten(#aee8a7, 15%),0.7);
+	height: 100%;
+  background-color: lighten(steelblue, 45%);
   padding: 8% 1% 5%;
 }
 .icon:hover {
@@ -42,5 +43,5 @@ ul.offer-text {
 	list-style: none;
 }
 .icon.img {
-	
+
 }
