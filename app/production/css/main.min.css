@@ -905,6 +905,7 @@ hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
 pre,textarea{overflow:auto}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
 button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+.offer-text,.title-front h3,h3.icon_title,p.icon_title{color:#3f75a2}
 button{overflow:visible}
 button,select{text-transform:none}
 button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
@@ -918,11 +919,11 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
-a,h1,h2,h3,h4,h5,h6,p{font-family:Catamaran,sans-serif}
 body{margin:10% 0 5%;background-color:#c5dffb}
+a,h1,h2,h3,h4,h5,h6,p{font-family:Catamaran,sans-serif}
+.about,.ofertas,.portfolio,.section1{background-color:rgba(255,255,255,.8);width:100%;margin:0 0 10%;padding:5% 0;border:1px solid gray;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
+p.icon_title{font-size:1.5em;font-weight:300}
 .title-front h3{font-weight:500}
-.offer-text,.title-front h3,h3.icon_title{color:#3f75a2}
-.about,.ofertas,.portfolio,.section1{background-color:rgba(255,255,255,.4);width:100%;margin:0 0 10%;padding:5% 0;border:1px solid gray;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
 .icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center;margin:3% 0 0}
 .icons-wrapper a{display:flex;flex-direction:column;justify-content:center;text-align:center;width:26%;border:1px solid #aaa;margin:5% 1%}
 .icon{background-color:rgba(230,248,228,.7);padding:8% 1% 5%}
@@ -931,4 +932,3 @@ body{margin:10% 0 5%;background-color:#c5dffb}
 .icon [class^=icon-]:hover{font-size:5em;color:#c00}
 .portfolio .icons-wrapper a,.section1 .icons-wrapper a{margin:.5%}
 .about .icons-wrapper a{width:48%;margin:5px}
-p.icon_title{font-size:1.5em;font-weight:300;color:#3f75a2}

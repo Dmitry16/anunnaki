@@ -1,3 +1,6 @@
+$c1 : #fda;
+$c2 : darken(steelblue,5%); //fonts
+
 body {
 	margin: 10% 0 5%;
 	background-color: lighten(#96c5f7,10%);
@@ -13,7 +16,7 @@ a, p, h1, h2, h3, h4, h5, h6 {
 //font-family: 'Open Sans', sans-serif;
 }
 .section1, .ofertas, .about, .portfolio {
-	background-color: lighten(rgba(#fff,.4),0%);
+	background-color: lighten(rgba(#fff,.8),0%);
 	width: 100%;
 	margin: 0% 0 10% 0;
 	padding: 5% 0 5% 0;

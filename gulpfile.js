@@ -24,8 +24,9 @@ gulp.task('styles', ['clean'], function() {
     return gulp.src([ 
     	'app/css/foundation.css',
     	'app/css/normalize.css',
+    	'app/css/typo-color.css',
     	'app/css/front.css'])
-    	.pipe(concat('todo.min.css'))
+    	.pipe(concat('main.min.css'))
         .pipe(minifyCSS({
             keepBreaks: true
         }))
