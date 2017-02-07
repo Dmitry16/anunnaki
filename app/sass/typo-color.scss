@@ -5,7 +5,7 @@ body {
 	margin: 10% 0 5%;
 	background-color: lighten(#96c5f7,10%);
 }
-a, p, h1, h2, h3, h4, h5, h6 {
+body, a, p, h1, h2, h3, h4, h5, h6 {
 //font-family: 'Roboto', sans-serif;
 // font-family: 'Indie Flower', cursive;
  //font-family: 'Oxygen', sans-serif;
@@ -14,6 +14,7 @@ a, p, h1, h2, h3, h4, h5, h6 {
  //font-family: 'Quicksand', sans-serif;
  //font-family: 'Permanent Marker', cursive;
 //font-family: 'Open Sans', sans-serif;
+color: $c2;
 }
 .section1, .ofertas, .about, .portfolio {
 	background-color: lighten(rgba(#fff,.8),0%);
@@ -27,14 +28,26 @@ a, p, h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	overflow: hidden;
 }
-p.icon_title {
-	font-size: 1.5em;
+p {
+	font-size: 1.2em;
   font-weight: 300;
   color: $c2;
+}
+p.quien-somos {
+		text-align: left;
+}
+p.icon_title {
+	font-size: 1.5em;
 }
 .title-front h3 {
   font-weight: 500;
 }
-.title-front h3, .offer-text, h3.icon_title {
+.title-front h3, .offer-text, h3.icon_title, {
 	color: $c2;
+}
+ul.offer-text, ul.porque {
+	list-style: none;
+}
+ul.porque li::before {
+content: "\f006";
 }
