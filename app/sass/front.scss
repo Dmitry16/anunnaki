@@ -1,0 +1,47 @@
+$c1 : #fda;
+$c2 : darken(steelblue,5%); //fonts
+
+.icons-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  margin: 3% 0 0 0;
+}
+.icons-wrapper a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 26%;
+	border: 1px solid #aaa;
+	margin: 5% 1%;
+}
+.icon {
+	height: 100%;
+  background-color: lighten(steelblue, 45%);
+  padding: 8% 1% 5%;
+}
+.icon:hover {
+  background-color: lighten(#aee8a7, 12%);
+}
+[class^=icon-] {
+	font-size: 5em;
+  color: rgba(darken(red, 15%), .7);
+}
+.icon [class^=icon-]:hover {
+	font-size: 5em;
+  color: darken(red, 10%);
+}
+.section1 .icons-wrapper a, .portfolio .icons-wrapper a  {
+  margin: 0.5%;
+}
+.about .icons-wrapper a {
+  width: 48%;
+  margin: 5px;
+}
+.icon.img {
+
+}
+.quien-somos {
+	padding: 0 2%;
+}
