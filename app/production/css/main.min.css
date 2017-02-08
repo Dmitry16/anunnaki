@@ -527,6 +527,7 @@ dialog[open]{display:block;visibility:visible}
 }
 .inner-wrap:after,[class*=block-grid-]:after,hr{clear:both}
 .inner-wrap,.off-canvas-wrap,.tab-bar{-webkit-backface-visibility:hidden;position:relative}
+.left-small,.right-small,.tab-bar-section{top:0;position:absolute}
 .text-left{text-align:left!important}
 .text-right{text-align:right!important}
 .text-center{text-align:center!important}
@@ -656,18 +657,18 @@ h2,h3{page-break-after:avoid}
 .off-canvas-wrap{width:100%;overflow:hidden}
 .off-canvas-wrap.move-left,.off-canvas-wrap.move-right{min-height:100%;-webkit-overflow-scrolling:touch}
 .inner-wrap{width:100%;-webkit-transition:-webkit-transform .5s ease;-moz-transition:-moz-transform .5s ease;-ms-transition:-ms-transform .5s ease;-o-transition:-o-transform .5s ease;transition:transform .5s ease}
+.left-small,.right-small,.tab-bar .menu-icon{width:2.8125rem;height:2.8125rem}
 .inner-wrap:after,.inner-wrap:before{content:" ";display:table}
 .tab-bar{background:#333;color:#fff;height:2.8125rem;line-height:2.8125rem}
-.left-small,.right-small,.tab-bar-section{position:absolute;top:0;height:2.8125rem}
 .tab-bar h1,.tab-bar h2,.tab-bar h3,.tab-bar h4,.tab-bar h5,.tab-bar h6{color:#fff;font-weight:700;line-height:2.8125rem;margin:0}
 .tab-bar h1,.tab-bar h2,.tab-bar h3,.tab-bar h4{font-size:1.125rem}
-.left-small{width:2.8125rem;border-right:solid 1px #1a1a1a;left:0}
-.right-small{width:2.8125rem;border-left:solid 1px #1a1a1a;right:0}
-.tab-bar-section{padding:0 .625rem;text-align:center}
+.left-small{border-right:solid 1px #1a1a1a;left:0}
+.right-small{border-left:solid 1px #1a1a1a;right:0}
+.tab-bar-section{padding:0 .625rem;text-align:center;height:2.8125rem}
 .tab-bar-section.left{left:0;right:2.8125rem}
 .tab-bar-section.right{left:2.8125rem;right:0}
 .tab-bar-section.middle{left:2.8125rem;right:2.8125rem}
-.tab-bar .menu-icon{text-indent:2.1875rem;width:2.8125rem;height:2.8125rem;display:block;line-height:2.0625rem;padding:0;color:#fff;position:relative;-ms-transform:translate(0,0);-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.tab-bar .menu-icon{text-indent:2.1875rem;display:block;line-height:2.0625rem;padding:0;color:#fff;position:relative;-ms-transform:translate(0,0);-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .tab-bar .menu-icon span{position:absolute;display:block;height:0;width:1rem;line-height:1;top:.9375rem;left:.90625rem;box-shadow:0 0 0 1px #fff,0 7px 0 1px #fff,0 14px 0 1px #fff}
 .left-off-canvas-menu,.right-off-canvas-menu{-webkit-backface-visibility:hidden;width:15.625rem;top:0;bottom:0;position:absolute;overflow-y:auto;background:#333;z-index:1001;box-sizing:content-box;-webkit-overflow-scrolling:touch}
 .tab-bar .menu-icon:hover span{box-shadow:0 0 0 1px #b3b3b3,0 7px 0 1px #b3b3b3,0 14px 0 1px #b3b3b3}
@@ -904,7 +905,6 @@ hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
 pre,textarea{overflow:auto}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
 button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
-.offer-text,.title-front h3,h3.icon_title,p{color:#3f75a2}
 button{overflow:visible}
 button,select{text-transform:none}
 button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
@@ -918,20 +918,23 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
+*{box-sizing:border-box}
 body{margin:10% 0 5%;background-color:#c5dffb}
-a,body,h1,h2,h3,h4,h5,h6,p{font-family:Catamaran,sans-serif;color:#3f75a2}
-.about,.ofertas,.portfolio,.section1{background-color:rgba(255,255,255,.8);width:100%;margin:0 0 10%;padding:5% 0;border:1px solid gray;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
 p{font-size:1.2em;font-weight:300}
-p.quien-somos{text-align:left}
-p.icon_title{font-size:1.5em}
+a,body,h1,h2,h3,h4,h5,h6,p{font-family:Catamaran,sans-serif;color:#3f75a2}
+section.about,section.ofertas,section.portfolio,section.section1{background-color:rgba(255,255,255,.8)}
 .title-front h3{font-weight:500}
+.offer-text,.title-front h3,h3.icon_title{color:#3f75a2}
 ul.porque li::before{content:"\f006"}
+.about,.ofertas,.portfolio,.section1{width:100%;margin:0 0 10%;padding:5% 0;border:1px solid gray;display:flex;flex-direction:column;justify-content:center;text-align:center;overflow:hidden}
+.portfolio.icons-wrapper a,.section1.icons-wrapper a{margin:.5%}
 .icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center;margin:3% 0 0}
-.icons-wrapper a{display:flex;flex-direction:column;justify-content:center;text-align:center;width:26%;border:1px solid #aaa;margin:5% 1%}
-.icon{height:100%;background-color:#e9f0f6;padding:8% 1% 5%}
-.icon:hover{background-color:#dbf5d8}
-[class^=icon-]{font-size:5em;color:rgba(179,0,0,.7)}
-.icon [class^=icon-]:hover{font-size:5em;color:#c00}
-.portfolio .icons-wrapper a,.section1 .icons-wrapper a{margin:.5%}
-.about .icons-wrapper a{width:48%;margin:5px}
+p.quien-somos{text-align:left}
 .quien-somos{padding:0 2%}
+.icon:hover{background-color:#f8fdf8}
+.icon [class^=icon-]:hover{font-size:5em;color:#c00}
+.icons-wrapper a{width:26%;border:1px solid #aaa;margin:1%}
+.portfolio>.icons-wrapper a{margin:.2%}
+.icon{height:100%;background-color:#e9f0f6;padding:8% 1% 5%}
+[class^=icon-]{font-size:5em;color:rgba(179,0,0,.7)}
+.about .icons-wrapper a{width:48%;margin:5px}

@@ -24,8 +24,7 @@ gulp.task('styles', ['clean'], function() {
     return gulp.src([ 
     	'app/css/foundation.css',
     	'app/css/normalize.css',
-    	'app/css/typo-color.css',
-    	'app/css/front.css'])
+    	'app/css/main.css'])
     	.pipe(concat('main.min.css'))
         .pipe(minifyCSS({
             keepBreaks: true
@@ -34,7 +33,7 @@ gulp.task('styles', ['clean'], function() {
 });
 
 gulp.task('sass', function(){
-	return	gulp.src('app/sass/**/*.scss')
+	return	gulp.src('app/sass/main.scss')
 		.pipe(sass())
 		//.pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], { cascade: true }))
 		.pipe(gulp.dest('app/css'))
