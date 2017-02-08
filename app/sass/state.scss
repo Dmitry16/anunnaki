@@ -1,0 +1,7 @@
+.icon:hover {
+  background-color: $c8;
+}
+.icon [class^=icon-]:hover {
+	font-size: 5em;
+  color: $c9;
+}
