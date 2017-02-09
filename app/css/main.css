@@ -83,3 +83,9 @@ p.quien-somos {
 .about .icons-wrapper a {
   width: 48%;
   margin: 5px; }
+
+.btn1 {
+  background: pink; }
+
+.btn2 {
+  background: coral; }
