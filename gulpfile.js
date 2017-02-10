@@ -16,6 +16,16 @@ var gulp      = require('gulp'),
 	sassdoc 		= require('sassdoc'),
 	converter 	= require('sass-convert');
 
+gulp.task('sass-convert', function() {
+ return gulp.src('app/sass/**/theme.scss')
+ 	.pipe(converter({
+		from: 'scss',
+		to: 'sass',
+	}))
+		.pipe(rename('theme.sass'))
+		.pipe(gulp.dest('app/sass/sass'))
+});
+
 gulp.task('clean', ['sass'], function() {
   return gulp.src(['app/production/css', 'app/production/js',
   	'app/production/images'], {read: false})
@@ -33,15 +43,6 @@ gulp.task('styles', ['clean'], function() {
             keepBreaks: true
         }))
         .pipe(gulp.dest('app/production/css'));
-});
-
-gulp.task('sass-convert', function() {
- return gulp.src('app/sass/**/*.+(scss|sass)')
- 	.pipe(converter({
-		from: 'scss',
-		to: 'sass',
-	}))
-	.pipe(sassdoc());
 });
 
 gulp.task('sass', function(){
@@ -64,7 +65,7 @@ gulp.task('browser-sync', ['styles'], function() {
 
 gulp.task('sass:watch', ['browser-sync'], function(){
 
-	gulp.watch('app/sass/**/*.scss', ['styles', browserSync.reload]);
+	gulp.watch('app/sass/**/*.+(sass|scss)', ['styles', browserSync.reload]);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
