@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 body {
   background-color: #abd1f9; }
 
@@ -66,6 +72,22 @@ body {
 p {
   font-size: 1.2em;
   font-weight: 300; }
+
+.hero {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .hero::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .hero .hero-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .hero .hero-content:last-child {
+      margin-right: 0; }
 
 .flex-column, .section1, .ofertas, .about, .portfolio, .portfolio-wrapper {
   display: flex;
@@ -153,3 +175,120 @@ p.quien-somos {
 
 .icon [class^=icon-]:hover {
   color: #cc0000; }
+
+.hero {
+  align-items: center;
+  background-image: url("index.html/img/contenidos-online.jpg");
+  background-position: right;
+  background-size: none;
+  display: flex;
+  justify-content: center;
+  min-height: 25em;
+  padding: 2em; }
+  @media screen and (min-width: 50em) {
+    .hero {
+      background-position: left;
+      background-size: cover;
+      justify-content: flex-end; } }
+  .hero .hero-content {
+    max-width: 20em;
+    text-align: center; }
+    @media screen and (min-width: 50em) {
+      .hero .hero-content {
+        text-align: left; } }
+  .hero .hero-logo {
+    margin: 5% auto;
+    width: 7em; }
+
+.points.section1 {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .points.section1::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.bullets {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  margin-bottom: 1.5em;
+  overflow: auto;
+  padding: 0; }
+  .bullets .bullet {
+    flex-basis: 20em;
+    flex-grow: 1; }
+  .bullets .bullet-icon {
+    background: #477DCA;
+    border-radius: 50%;
+    float: left;
+    height: 3.5em;
+    padding: 0.875em;
+    width: 3.5em; }
+  .bullets .bullet-icon-1 {
+    background: #477DCA; }
+  .bullets .bullet-icon-2 {
+    background: #47caaa; }
+  .bullets .bullet-icon-3 {
+    background: #a9ca47; }
+  .bullets .bullet-content {
+    margin-bottom: 2em;
+    margin-left: 4.9em; }
+  .bullets h2 {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 0 0 0.58333em 0;
+    padding-top: 0.5em; }
+  .bullets li {
+    list-style: none; }
+  .bullets p {
+    color: #333;
+    line-height: 1.5em; }
+  .bullets img {
+    max-width: 100%; }
+
+.footer {
+  background: #40526b;
+  padding: 3em 1.618em;
+  width: 100%; }
+  .footer .footer-logo {
+    margin-bottom: 2em;
+    text-align: center; }
+    .footer .footer-logo img {
+      height: 3em; }
+  .footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5em; }
+  .footer ul {
+    flex-basis: 13em;
+    flex-shrink: 0;
+    margin-bottom: 3em;
+    padding: 0; }
+  .footer li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center; }
+  .footer li a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none; }
+    .footer li a:focus, .footer li a:hover {
+      color: white; }
+  .footer li h3 {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 0.4em; }
+  .footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto 1.5em;
+    width: 12em; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center; }
