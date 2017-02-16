@@ -5,14 +5,14 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #abd1f9; }
+  background-color: #db9f3f; }
 
 body, a, p, h1, h2, h3, h4, h5, h6 {
-  font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+  font-family: 'Inconsolata', monospace;
   color: #3f75a2; }
 
 section.section1, section.ofertas, section.about, section.portfolio {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.1); }
 
 .title-front h3 {
   font-weight: 500; }
@@ -312,6 +312,8 @@ p.quien-somos {
     text-align: center; }
 
 header {
+  display: flex;
+  flex-direction: column;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -320,11 +322,15 @@ header {
     content: "";
     display: table; }
 
+.header-logo-title {
+  display: flex; }
+
 h1.site-title {
+  font-family: 'Indie Flower', cursive;
   margin: 5% 0 0 0;
   padding: 5% 0 5%;
   width: 70%;
-  background: pink;
+  background: none;
   text-align: center;
   float: right;
   color: #00b300;

@@ -1,9 +1,9 @@
 $c1 : lighten(#fda,10%);
 $c2 : darken(steelblue,5%); // font color
-$c3 : tint(#96c5f7,20%); // body bg
+$c3 : tint(rgb(219, 159, 63),0%); // body bg
 $c4 : rgba(darken(red, 15%), .7); // icons color
 $c5 : lighten(steelblue, 45%); // icons bg
-$c6 : rgba(#fff,.9); // sections bg color
+$c6 : rgba(#fff,.1); // sections bg color
 $c7 : #aaa; // icon border color
 $c8 : lighten(#aee8a7, 20%); // icon bg on hover state color
 $c9 : darken(red, 10%); // icon on hover state color
@@ -19,11 +19,11 @@ body, a, p, h1, h2, h3, h4, h5, h6 {
   //font-family: 'Indie Flower', cursive;
    //font-family: 'Oxygen', sans-serif;
    //font-family: 'Catamaran', sans-serif;
-   //font-family: 'Inconsolata', monospace;
-   //font-family: 'Quicksand', sans-serif;
-   //font-family: 'Permanent Marker', cursive;
+   font-family: 'Inconsolata', monospace;
+  //font-family: 'Quicksand', sans-serif;
+  //  font-family: 'Permanent Marker', cursive;
   //font-family: 'Open Sans', sans-serif;
-	font-family: $monospace;
+	//font-family: $monospace;
   color: $c2;
 }
 section.section1, section.ofertas, section.about, section.portfolio {

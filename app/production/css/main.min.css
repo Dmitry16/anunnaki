@@ -922,9 +922,9 @@ optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
 html{box-sizing:border-box}
 *,::after,::before{box-sizing:inherit}
-body{background-color:#abd1f9;margin:0 0 5%}
-a,body,h1,h2,h3,h4,h5,h6,p{font-family:"Bitstream Vera Sans Mono",Consolas,Courier,monospace;color:#3f75a2}
-section.about,section.ofertas,section.portfolio,section.section1{background-color:rgba(255,255,255,.9)}
+body{background-color:#db9f3f;margin:0 0 5%}
+a,body,h1,h2,h3,h4,h5,h6,p{font-family:Inconsolata,monospace;color:#3f75a2}
+section.about,section.ofertas,section.portfolio,section.section1{background-color:rgba(255,255,255,.1)}
 .title-front h3{font-weight:500}
 .offer-text,.title-front h3,h3.icon_title{color:#3f75a2}
 ul.porque li::before{content:"\f006"}
@@ -993,6 +993,7 @@ p.quien-somos{text-align:left}
 .footer li h3{color:#fff;font-size:1em;margin-bottom:.4em}
 .footer hr{border:1px solid rgba(255,255,255,.1);margin:0 auto 1.5em;width:12em}
 .footer p{color:rgba(255,255,255,.4);font-size:.9em;margin:auto;max-width:35em}
-header{max-width:68em;margin-left:auto;margin-right:auto}
+header{display:flex;flex-direction:column;max-width:68em;margin-left:auto;margin-right:auto}
 header::after{display:table}
-h1.site-title{margin:5% 0 0;padding:5% 0;width:70%;background:pink;float:right;color:#00b300;font-size:3em}
+.header-logo-title{display:flex}
+h1.site-title{font-family:'Indie Flower',cursive;margin:5% 0 0;padding:5% 0;width:70%;background:0 0;float:right;color:#00b300;font-size:3em}

@@ -1,15 +1,17 @@
 header {
-    @include outer-container;
-    // .logo {
-    //   width: 200px;
-    //   height: 200px;
-    // }
+  display: flex;
+  flex-direction: column;
+  @include outer-container;
+}
+.header-logo-title {
+  display: flex;
 }
 h1.site-title {
+  font-family: 'Indie Flower', cursive;
   margin: 5% 0 0 0;
   padding: 5% 0 5%;
   width: 70%;
-  background: pink;
+  background: none;
   text-align: center;
   float: right;
   color: lighten(green,10%);
