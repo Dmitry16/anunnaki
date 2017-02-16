@@ -1,0 +1,17 @@
+header {
+    @include outer-container;
+    // .logo {
+    //   width: 200px;
+    //   height: 200px;
+    // }
+}
+h1.site-title {
+  margin: 5% 0 0 0;
+  padding: 5% 0 5%;
+  width: 70%;
+  background: pink;
+  text-align: center;
+  float: right;
+  color: lighten(green,10%);
+  font-size: 3em;
+}

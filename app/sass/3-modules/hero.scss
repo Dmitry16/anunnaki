@@ -1,9 +1,9 @@
 .hero {
   $large-screen: 50em !default;
   align-items: center;
-  background-image: url("C:\xampp\htdocs\SOLUTECS\wp-content\themes\mytheme\app\img\contenidos-online.jpg");
+  background-image: url("/img/francisaliens.jpg");
   background-position: right;
-  background-size: none;
+  //background-size: none;
   display: flex;
   justify-content: center;
   min-height: 25em;
@@ -17,10 +17,21 @@
 
   .hero-content {
     max-width: 20em;
-    text-align: center;
+    text-align: left;
 
     @include media($large-screen) {
       text-align: left;
+    }
+    p {
+      border: 2px solid #fff;
+      border-radius: 70px 70px 70px 0;
+      // border-top-right-radius: 70px;
+      // border-bottom-right-radius: 70px;
+      // border-bottom-left-radius: 0;
+      padding: 7%;
+      color: yellow;
+      background: rgba(#000,.3);
+
     }
   }
 

@@ -2,8 +2,9 @@ $visual-grid: true
 
 .hero
 	+outer-container
+	+span-columns(12)
 	.hero-content
-		+span-columns(12)
+		+span-columns(9)
 
 .flex-column
 	display: flex
@@ -11,8 +12,9 @@ $visual-grid: true
 	justify-content: center
 
 .section1, .ofertas, .about, .portfolio
+	+outer-container
 	width: 100%
-	margin: 0% 0 10% 0
+	margin: 0% auto 10%
 	padding: 5% 0 5% 0
 	border: 1px solid gray
 	@extend .flex-column

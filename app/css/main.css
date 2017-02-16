@@ -67,7 +67,7 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
   box-sizing: border-box; }
 
 body {
-  margin: 10% 0 5%; }
+  margin: 0% 0 5%; }
 
 p {
   font-size: 1.2em;
@@ -76,16 +76,22 @@ p {
 .hero {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
   .hero::after {
     clear: both;
     content: "";
     display: table; }
+  .hero:last-child {
+    margin-right: 0; }
   .hero .hero-content {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 74.41059%; }
     .hero .hero-content:last-child {
       margin-right: 0; }
 
@@ -95,12 +101,19 @@ p {
   justify-content: center; }
 
 .section1, .ofertas, .about, .portfolio {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  margin: 0% 0 10% 0;
+  margin: 0% auto 10%;
   padding: 5% 0 5% 0;
   border: 1px solid gray;
   text-align: center;
   overflow: hidden; }
+  .section1::after, .ofertas::after, .about::after, .portfolio::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .section1.icons-wrapper a, .portfolio.icons-wrapper a {
   margin: 0.5%; }
@@ -178,9 +191,8 @@ p.quien-somos {
 
 .hero {
   align-items: center;
-  background-image: url("index.html/img/contenidos-online.jpg");
+  background-image: url("/img/francisaliens.jpg");
   background-position: right;
-  background-size: none;
   display: flex;
   justify-content: center;
   min-height: 25em;
@@ -192,10 +204,16 @@ p.quien-somos {
       justify-content: flex-end; } }
   .hero .hero-content {
     max-width: 20em;
-    text-align: center; }
+    text-align: left; }
     @media screen and (min-width: 50em) {
       .hero .hero-content {
         text-align: left; } }
+    .hero .hero-content p {
+      border: 2px solid #fff;
+      border-radius: 70px 70px 70px 0;
+      padding: 7%;
+      color: yellow;
+      background: rgba(0, 0, 0, 0.3); }
   .hero .hero-logo {
     margin: 5% auto;
     width: 7em; }
@@ -292,3 +310,22 @@ p.quien-somos {
     margin: auto;
     max-width: 35em;
     text-align: center; }
+
+header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+h1.site-title {
+  margin: 5% 0 0 0;
+  padding: 5% 0 5%;
+  width: 70%;
+  background: pink;
+  text-align: center;
+  float: right;
+  color: #00b300;
+  font-size: 3em; }
