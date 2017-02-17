@@ -151,7 +151,7 @@ p.quien-somos {
 
 .icon {
   height: 100%;
-  background-color: #e9f0f6;
+  background-color: rgba(233, 240, 246, 0.3);
   padding: 8% 1% 5%; }
 
 [class^=icon-] {
@@ -184,7 +184,7 @@ p.quien-somos {
         color: red; }
 
 .icon:hover {
-  background-color: #f8fdf8; }
+  background-color: #aee8a7; }
 
 .icon [class^=icon-]:hover {
   color: #cc0000; }

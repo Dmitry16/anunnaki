@@ -2,10 +2,10 @@ $c1 : lighten(#fda,10%);
 $c2 : darken(steelblue,5%); // font color
 $c3 : tint(rgb(219, 159, 63),0%); // body bg
 $c4 : rgba(darken(red, 15%), .7); // icons color
-$c5 : lighten(steelblue, 45%); // icons bg
+$c5 : rgba(lighten(steelblue, 45%),.3); // icons bg
 $c6 : rgba(#fff,.1); // sections bg color
 $c7 : #aaa; // icon border color
-$c8 : lighten(#aee8a7, 20%); // icon bg on hover state color
+$c8 : lighten(#aee8a7, 0%); // icon bg on hover state color
 $c9 : darken(red, 10%); // icon on hover state color
 $c10: coral; // all buttons generic bg color
 $c11: #fff; // button text color
