@@ -1,7 +1,7 @@
 .hero {
   $large-screen: 50em !default;
   align-items: center;
-  background-image: url("/img/francisaliens.jpg");
+  background-image: url("/img/montserrat1.jpg");
   background-position: right;
   //background-size: none;
   display: flex;
@@ -23,6 +23,7 @@
       text-align: left;
     }
     p {
+      display: none;
       border: 2px solid #fff;
       border-radius: 70px 70px 70px 0;
       // border-top-right-radius: 70px;

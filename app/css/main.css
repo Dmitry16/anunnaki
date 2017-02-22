@@ -191,7 +191,7 @@ p.quien-somos {
 
 .hero {
   align-items: center;
-  background-image: url("/img/francisaliens.jpg");
+  background-image: url("/img/montserrat1.jpg");
   background-position: right;
   display: flex;
   justify-content: center;
@@ -209,6 +209,7 @@ p.quien-somos {
       .hero .hero-content {
         text-align: left; } }
     .hero .hero-content p {
+      display: none;
       border: 2px solid #fff;
       border-radius: 70px 70px 70px 0;
       padding: 7%;
