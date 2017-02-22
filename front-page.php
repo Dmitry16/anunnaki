@@ -6,6 +6,14 @@
 
 <?php get_header(); ?>
 
+<div class="hero">
+  <div class="hero-content">
+    <p>exoterismo..fitoterapia
+      ...holistica...contemplación de astros....detox
+    fuego al aire libre....recogida de alimentos silvestres...
+    </p>
+  </div>
+</div>
 
 
     <section class="row">

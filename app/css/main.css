@@ -5,7 +5,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #db9f3f; }
+  background-color: #e6bc79; }
 
 body, a, p, h1, h2, h3, h4, h5, h6 {
   font-family: 'Inconsolata', monospace;
@@ -192,7 +192,7 @@ p.quien-somos {
 
 .hero {
   align-items: center;
-  background-image: url("/img/montserrat1.jpg");
+  background-image: url("http://localhost/wordpress/wp-content/themes/anunnaki/app/img/montserrat1.jpg");
   background-position: right;
   display: flex;
   justify-content: center;
@@ -324,15 +324,39 @@ header {
     content: "";
     display: table; }
 
-.header-logo-title {
+.header-logo-title, .current {
   display: flex; }
+
+.logo {
+  height: 12em;
+  margin: 7% 0 0 3%; }
 
 h1.site-title {
   font-family: 'Indie Flower', cursive;
-  margin: 5% 0 0 0;
+  margin: 0% 0 0 -5%;
   padding: 5% 0 5%;
   width: 70%;
   background: none;
   text-align: center;
   float: right;
   font-size: 5em; }
+
+ul.main-nav {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c6efc1; }
+
+ul.main-nav li {
+  padding: 1% 0;
+  width: 12%;
+  text-align: center;
+  list-style: none;
+  color: red !important; }
+
+ul.main-nav li:hover {
+  background: coral; }
+
+ul.main-nav li {
+  border: none; }

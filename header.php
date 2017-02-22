@@ -18,15 +18,6 @@
   			   <h1 class="site-title"><?php bloginfo('name'); ?></h1>
         </a>
   		</div>
-  		<div class="hero">
-  		  <div class="hero-content">
-  		    <p>exoterismo..fitoterapia
-  					...holistica...contemplación de astros....detox
-  				fuego al aire libre....recogida de alimentos silvestres...
-  				</p>
-  			</div>
-  		</div>
-  </header>
 
     <?php
 
@@ -34,7 +25,7 @@
 
     		'container' => false,
     		'theme_location' => 'primary-menu',
-    		'menu_class' => 'no-bullet'
+    		'menu_class' => 'main-nav'
     	);
 
     	wp_nav_menu( $defaults );
@@ -60,5 +51,4 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
 -->
-  </nav>
 </header>

@@ -1,14 +1,22 @@
+//@import "_nav.scss";
+
 header {
+  //border: 1px solid blue;
   display: flex;
   flex-direction: column;
   @include outer-container;
 }
-.header-logo-title {
+.header-logo-title, .current {
   display: flex;
+}
+.logo {
+  //border: 1px solid blue;
+  height: 12em;
+  margin: 7% 0 0 3%;
 }
 h1.site-title {
   font-family: 'Indie Flower', cursive;
-  margin: 5% 0 0 0;
+  margin: 0% 0 0 -5%;
   padding: 5% 0 5%;
   width: 70%;
   background: none;
@@ -16,4 +24,5 @@ h1.site-title {
   float: right;
   //color: shadow(green,0%);
   font-size: 5em;
+  //  border: 1px solid blue;
 }

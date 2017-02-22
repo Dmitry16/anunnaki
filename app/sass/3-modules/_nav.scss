@@ -1,24 +1,25 @@
-nav {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  margin-top: 1%;
-  background: $c13;
-}
+// nav {
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: center;
+//   margin-top: 1%;
+//   background: $c13;
+// }
 ul.main-nav {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  //background: pink;
+  background: tint($c8, 30%);
 }
-ul.main-nav a {
+ul.main-nav li {
   padding: 1% 0;
   width: 12%;
   text-align: center;
   list-style: none;
+  color: red !important;
 }
-ul.main-nav a:hover {
+ul.main-nav li:hover {
   background: coral;
 }
 // ul.main-nav a li {
