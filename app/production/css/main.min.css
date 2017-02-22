@@ -952,7 +952,7 @@ p{font-weight:300}
 p.quien-somos{text-align:left}
 .quien-somos{padding:0 2%;columns:2 150px;column-rule:solid 1px coral;column-gap:1.5em}
 .button-more{margin:5% auto 2%;padding:1.5%}
-.icons-wrapper a{width:26%;border:1px solid #aaa;margin:1%}
+.icons-wrapper a{width:26%;border:1px solid #eee;margin:1%}
 .portfolio>.icons-wrapper a{margin:.2%}
 .icon{height:100%;background-color:rgba(233,240,246,.3);padding:8% 1% 5%}
 [class^=icon-]{font-size:4em}

@@ -1,0 +1,29 @@
+nav {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin-top: 1%;
+  background: $c13;
+}
+ul.main-nav {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background: pink;
+}
+ul.main-nav a {
+  padding: 1% 0;
+  width: 12%;
+  text-align: center;
+  list-style: none;
+}
+ul.main-nav a:hover {
+  background: coral;
+}
+// ul.main-nav a li {
+//   border-right: 1px solid steelblue;
+// }
+ul.main-nav li {
+  border: none;
+}
