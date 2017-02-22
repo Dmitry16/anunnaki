@@ -944,10 +944,10 @@ p{font-weight:300}
 .hero .hero-content{float:left;display:block;margin-right:2.35765%;width:74.41059%}
 .hero .hero-content:last-child{margin-right:0}
 .about,.flex-column,.ofertas,.portfolio,.portfolio-wrapper,.section1{display:flex;flex-direction:column;justify-content:center}
-.about,.ofertas,.portfolio,.section1{max-width:68em;width:100%;margin:0 auto 10%;padding:5% 0;border:1px solid gray;text-align:center;overflow:hidden}
+.about,.ofertas,.portfolio,.section1{max-width:68em;width:100%;margin:0 auto 10%;padding:7% 0 5%;border:1px solid gray;text-align:center;overflow:hidden}
 .about::after,.ofertas::after,.portfolio::after,.section1::after{clear:both;content:"";display:table}
 .portfolio.icons-wrapper a,.section1.icons-wrapper a{margin:.5%}
-.icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center;justify-content-margin:3% 0 0 0}
+.icons-wrapper{display:flex;flex-wrap:wrap;justify-content:center;justify-content-margin:7% 0 0 0;padding:7% 0 5%}
 .portfolio-wrapper{text-align:center}
 p.quien-somos{text-align:left}
 .quien-somos{padding:0 2%;columns:2 150px;column-rule:solid 1px coral;column-gap:1.5em}
@@ -996,4 +996,4 @@ p.quien-somos{text-align:left}
 header{display:flex;flex-direction:column;max-width:68em;margin-left:auto;margin-right:auto}
 header::after{display:table}
 .header-logo-title{display:flex}
-h1.site-title{font-family:'Indie Flower',cursive;margin:5% 0 0;padding:5% 0;width:70%;background:0 0;float:right;color:#00b300;font-size:3em}
+h1.site-title{font-family:'Indie Flower',cursive;margin:5% 0 0;padding:5% 0;width:70%;background:0 0;float:right;font-size:5em}
