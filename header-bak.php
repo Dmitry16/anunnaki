@@ -10,23 +10,11 @@
   </head>
 
   <body <?php body_class(); ?>>
-
-    <header class="header">
-  		<div class="header-logo-title">
-        <a class='current' href="<?php echo home_url(); ?>">
-  	       <img src="http://localhost/wordpress/wp-content/themes/anunnaki/app/img/pajarin2.png" alt="Logo Image" class="logo">
-  			   <h1 class="site-title"><?php bloginfo('name'); ?></h1>
-        </a>
-  		</div>
-  		<div class="hero">
-  		  <div class="hero-content">
-  		    <p>exoterismo..fitoterapia
-  					...holistica...contemplación de astros....detox
-  				fuego al aire libre....recogida de alimentos silvestres...
-  				</p>
-  			</div>
-  		</div>
-  </header>
+    <header class="row no-max pad main">
+  <h1><a class='current' href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+  <a href="" class="nav-toggle"><span></span>Menu</a>
+  <nav>
+    <h1 class="open"><a class='current' href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 
     <?php
 
