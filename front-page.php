@@ -15,6 +15,22 @@
   </div>
 </div>
 
+<?php include('front_page_modules/_intereses.php'); ?>
+
+<section id="cta-section1" class="cta-section">
+    <div class="cta">
+      <h3>Que te apetece hacer?</h3>
+      <div class="cta-buttons-wrapper">
+        <button class="cta-button">Conocer quien somos</button>
+        <button class="cta-button">Saber que ofrecemos</button>
+        <button class="cta-button">Ver las fotos</button>
+      </div>
+    </div>
+</section>
+
+<?php include('front_page_modules/_fotos.php'); ?>
+
+<?php include('front_page_modules/_about.php'); ?>
 
     <section class="row">
       <div class="small-12 columns text-center">
