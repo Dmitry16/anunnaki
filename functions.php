@@ -49,7 +49,8 @@ wpt_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the
 function wpt_theme_styles() {
 
 	//wp_enqueue_style( 'foundation_css', get_template_directory_uri() . '/css/foundation.css' );
-	//wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css' );
+	wp_enqueue_style( 'icons', get_template_directory_uri() .
+	'/app/icons/icon-styles.css' );
 	wp_enqueue_style( 'googlefonts_css', 'https://fonts.googleapis.com/css?family=Catamaran|Inconsolata|Indie+Flower|Open+Sans|Oxygen|Permanent+Marker|Quicksand|Roboto' );
 	wp_enqueue_style( 'main_css', get_template_directory_uri() .
 	'/app/production/css/main.min.css' );

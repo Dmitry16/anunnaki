@@ -67,33 +67,18 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
   box-sizing: border-box; }
 
 body {
-  margin: 0% 0 5%; }
+  margin: 0% 0 5%;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 p {
   font-size: 1.2em;
   font-weight: 300; }
-
-.hero {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .hero::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .hero:last-child {
-    margin-right: 0; }
-  .hero .hero-content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%; }
-    .hero .hero-content:last-child {
-      margin-right: 0; }
 
 .flex-column, .section1, .ofertas, .about, .portfolio, .portfolio-wrapper {
   display: flex;
@@ -101,19 +86,12 @@ p {
   justify-content: center; }
 
 .section1, .ofertas, .about, .portfolio {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   margin: 0% auto 10%;
   padding: 7% 0 5% 0;
   border: 1px solid gray;
   text-align: center;
   overflow: hidden; }
-  .section1::after, .ofertas::after, .about::after, .portfolio::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .section1.icons-wrapper a, .portfolio.icons-wrapper a {
   margin: 0.5%; }
@@ -191,6 +169,7 @@ p.quien-somos {
   color: #cc0000; }
 
 .hero {
+  margin: 5% 0;
   align-items: center;
   background-image: url("http://localhost/wordpress/wp-content/themes/anunnaki/app/img/montserrat1.jpg");
   background-position: right;
