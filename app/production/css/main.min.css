@@ -991,7 +991,9 @@ header{display:flex;flex-direction:column;max-width:68em;margin-left:auto;margin
 header::after{display:table}
 .current,.header-logo-title,ul.main-nav{display:flex}
 .logo{height:12em;margin:7% 0 0 3%}
-h1.site-title{font-family:'Indie Flower',cursive;margin:0 0 0 -5%;padding:5% 0;width:70%;background:0 0;float:right;font-size:5em}
-ul.main-nav{margin:0;justify-content:center;align-items:center;background:#c6efc1}
-ul.main-nav li{padding:1% 0;width:12%;color:red!important;border:none}
+h1.site-title{font-family:'Indie Flower',cursive;margin:0;padding:5% 0;width:70%;background:0 0;float:right;font-size:5em}
+ul.main-nav{margin:0;justify-content:center;align-items:center;background:#3f75a2}
+ul.main-nav li{padding:1% 0;width:12%;border:none}
+ul.main-nav li a{color:#eee}
 ul.main-nav li:hover{background:coral}
+ul.main-nav li:hover>a{font-weight:500;color:#315a7d}

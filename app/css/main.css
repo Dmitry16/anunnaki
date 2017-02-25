@@ -312,7 +312,7 @@ header {
 
 h1.site-title {
   font-family: 'Indie Flower', cursive;
-  margin: 0% 0 0 -5%;
+  margin: 0% 0 0 0%;
   padding: 5% 0 5%;
   width: 70%;
   background: none;
@@ -325,17 +325,23 @@ ul.main-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #c6efc1; }
+  background: #3f75a2; }
 
 ul.main-nav li {
   padding: 1% 0;
   width: 12%;
   text-align: center;
-  list-style: none;
-  color: red !important; }
+  list-style: none; }
+
+ul.main-nav li a {
+  color: #eee; }
 
 ul.main-nav li:hover {
   background: coral; }
+
+ul.main-nav li:hover > a {
+  font-weight: 500;
+  color: #315a7d; }
 
 ul.main-nav li {
   border: none; }
