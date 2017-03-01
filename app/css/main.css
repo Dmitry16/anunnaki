@@ -148,7 +148,7 @@ p.quien-somos {
 .hero {
   position: relative;
   overflow: hidden;
-  border: 1px solid red;
+  border: 1px solid #eee;
   margin: 5% 0;
   align-items: center;
   background-image: url("http://localhost/wordpress/wp-content/themes/anunnaki/app/img/montserrat1.jpg");
@@ -169,6 +169,7 @@ p.quien-somos {
       position: absolute;
       top: 1em;
       right: 0em;
+      display: none;
       border: 2px solid #fff;
       border-radius: 70px 70px 70px 0;
       padding: 7%;

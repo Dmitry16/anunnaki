@@ -7,6 +7,16 @@
 <?php get_header(); ?>
 
 <div class="hero">
+  <img src="<?php echo get_template_directory_uri() .
+  '/app/img/album/slider1.jpeg' ?>"
+  alt="anunnaki" id="im2" class="slider-img out">
+  <img src="<?php echo get_template_directory_uri().
+  '/app/img/album/slider2.jpeg' ?>"
+  alt="anunnaki" id="im2" class="slider-img out">
+  <img src="<?php echo get_template_directory_uri().
+  '/app/img/album/slider3.jpeg' ?>"
+  alt="anunnaki" id="im2" class="slider-img out">
+
   <div class="hero-content">
     <p>exoterismo..fitoterapia
       ...holistica...contemplación de astros....detox

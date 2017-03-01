@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   overflow: hidden;
-  border: 1px solid red;
+  border: 1px solid #eee;
   margin: 5% 0;
   $large-screen: 50em !default;
   align-items: center;
@@ -37,7 +37,7 @@
       position: absolute;
       top: 1em;
       right: 0em;
-      //display: ;
+      display: none;
       border: 2px solid #fff;
       border-radius: 70px 70px 70px 0;
       // border-top-right-radius: 70px;

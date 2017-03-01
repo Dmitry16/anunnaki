@@ -39,10 +39,10 @@ let timer = window.setInterval(function() {
       i--;
       img_arr[i].style.opacity = 0;
 
-
     } else if (i === 0 && visible === true) {
       visible = false;
     }
+
   }, 2000);
 
 

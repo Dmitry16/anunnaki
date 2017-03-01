@@ -37,14 +37,15 @@ function wpt_create_widget( $name, $id, $description ) {
 wpt_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
 wpt_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
 
-// function wpt_theme_js() {
+function wpt_theme_js() {
 //
 // 	wp_enqueue_script( 'jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', '', '', true );
 // 	wp_enqueue_script( 'modernizr_js', get_template_directory_uri() . '/js/modernizr.js', '', '', true );
 // 	wp_enqueue_script( 'foundation_js', get_template_directory_uri() . '/js/foundation.min.js', '', '', true );
 // 	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', '', '', true );
-// }
-//add_action( 'wp_enqueue_scripts', 'wpt_theme_js' );
+	wp_enqueue_script( 'slider_js', get_template_directory_uri() . '/app/js/slider.js', '', '', true );
+ }
+add_action( 'wp_enqueue_scripts', 'wpt_theme_js' );
 
 function wpt_theme_styles() {
 
