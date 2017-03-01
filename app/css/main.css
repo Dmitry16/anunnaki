@@ -146,27 +146,29 @@ p.quien-somos {
   color: #cc0000; }
 
 .hero {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid red;
   margin: 5% 0;
   align-items: center;
   background-image: url("http://localhost/wordpress/wp-content/themes/anunnaki/app/img/montserrat1.jpg");
   background-position: right;
+  background-size: cover;
   display: flex;
   justify-content: center;
   min-height: 25em;
   padding: 2em; }
-  @media screen and (min-width: 50em) {
-    .hero {
-      background-position: left;
-      background-size: cover;
-      justify-content: flex-end; } }
   .hero .hero-content {
+    position: relative;
     max-width: 20em;
     text-align: left; }
     @media screen and (min-width: 50em) {
       .hero .hero-content {
         text-align: left; } }
     .hero .hero-content p {
-      display: none;
+      position: absolute;
+      top: 1em;
+      right: 0em;
       border: 2px solid #fff;
       border-radius: 70px 70px 70px 0;
       padding: 7%;
@@ -322,3 +324,11 @@ ul.main-nav li:hover > a {
 
 ul.main-nav li {
   border: none; }
+
+img.slider-img {
+  top: 0px;
+  right: 0px;
+  position: absolute; }
+
+.out {
+  opacity: 0; }

@@ -527,6 +527,7 @@ dialog[open]{display:block;visibility:visible}
 .clearing-close{position:absolute;top:10px;right:20px;padding-left:0;padding-top:0}
 }
 .inner-wrap:after,[class*=block-grid-]:after,hr{clear:both}
+.inner-wrap,.off-canvas-wrap{width:100%;position:relative}
 .left-small,.right-small,.tab-bar-section{top:0;position:absolute}
 .text-left{text-align:left!important}
 .text-right{text-align:right!important}
@@ -654,9 +655,9 @@ h2,h3{page-break-after:avoid}
 .hide-for-print{display:none!important}
 .show-for-print{display:inherit!important}
 }
-.off-canvas-wrap{-webkit-backface-visibility:hidden;position:relative;width:100%;overflow:hidden}
+.off-canvas-wrap{-webkit-backface-visibility:hidden;overflow:hidden}
 .off-canvas-wrap.move-left,.off-canvas-wrap.move-right{min-height:100%;-webkit-overflow-scrolling:touch}
-.inner-wrap{-webkit-backface-visibility:hidden;position:relative;width:100%;-webkit-transition:-webkit-transform .5s ease;-moz-transition:-moz-transform .5s ease;-ms-transition:-ms-transform .5s ease;-o-transition:-o-transform .5s ease;transition:transform .5s ease}
+.inner-wrap{-webkit-backface-visibility:hidden;-webkit-transition:-webkit-transform .5s ease;-moz-transition:-moz-transform .5s ease;-ms-transition:-ms-transform .5s ease;-o-transition:-o-transform .5s ease;transition:transform .5s ease}
 .left-small,.right-small,.tab-bar .menu-icon{width:2.8125rem;height:2.8125rem}
 .inner-wrap:after,.inner-wrap:before{content:" ";display:table}
 .tab-bar{-webkit-backface-visibility:hidden;background:#333;color:#fff;height:2.8125rem;line-height:2.8125rem;position:relative}
@@ -819,6 +820,7 @@ td.hide-for-large,td.hide-for-large-only,td.hide-for-large-up,td.hide-for-medium
 .flex-video.widescreen{padding-bottom:56.34%}
 .flex-video.vimeo{padding-top:0}
 .flex-video embed,.flex-video iframe,.flex-video object,.flex-video video{position:absolute;top:0;left:0;width:100%;height:100%}
+.hero,sub,sup{position:relative}
 .keystroke,kbd{background-color:#ededed;border-color:#ddd;color:#222;border-style:solid;border-width:1px;margin:0;font-family:Consolas,Menlo,Courier,monospace;font-size:inherit;padding:.125rem .25rem 0;border-radius:3px}
 legend,td,th{padding:0}
 img,legend{border:0}
@@ -897,7 +899,7 @@ abbr[title]{border-bottom:1px dotted}
 h1{font-size:2em;margin:.67em 0}
 mark{background:#ff0;color:#000}
 small{font-size:80%}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub,sup{font-size:75%;line-height:0;vertical-align:baseline}
 sup{top:-.5em}
 sub{bottom:-.25em}
 figure{margin:1em 40px}
@@ -954,13 +956,12 @@ p.quien-somos{text-align:left}
 .cta .cta-buttons-wrapper .cta-button.cta-button:hover{background:#90ee90;box-shadow:5px 5px 10px rgba(0,0,0,.7);color:red}
 .icon:hover{background-color:#aee8a7}
 .icon [class^=icon-]:hover{color:#c00}
-.hero{margin:5% 0;align-items:center;background-image:url(http://localhost/wordpress/wp-content/themes/anunnaki/app/img/montserrat1.jpg);background-position:right;display:flex;justify-content:center;min-height:25em;padding:2em}
-.hero .hero-content{max-width:20em;text-align:left}
-@media screen and (min-width:50em){.hero{background-position:left;background-size:cover;justify-content:flex-end}
-.hero .hero-content{text-align:left}
+.hero{overflow:hidden;border:1px solid red;margin:5% 0;align-items:center;background-image:url(http://localhost/wordpress/wp-content/themes/anunnaki/app/img/montserrat1.jpg);background-position:right;background-size:cover;display:flex;justify-content:center;min-height:25em;padding:2em}
+.hero .hero-content{position:relative;max-width:20em;text-align:left}
+@media screen and (min-width:50em){.hero .hero-content{text-align:left}
 }
 .footer li,.footer p,h1.site-title,ul.main-nav li{text-align:center}
-.hero .hero-content p{display:none;border:2px solid #fff;border-radius:70px 70px 70px 0;padding:7%;color:#ff0;background:rgba(0,0,0,.3)}
+.hero .hero-content p{position:absolute;top:1em;right:0;border:2px solid #fff;border-radius:70px 70px 70px 0;padding:7%;color:#ff0;background:rgba(0,0,0,.3)}
 .hero .hero-logo{margin:5% auto;width:7em}
 .points.section1{max-width:68em;margin-left:auto;margin-right:auto}
 .points.section1::after{display:table}
@@ -994,3 +995,5 @@ ul.main-nav li{padding:1% 0;width:12%;border:none}
 ul.main-nav li a{color:#eee}
 ul.main-nav li:hover{background:coral}
 ul.main-nav li:hover>a{font-weight:500;color:#315a7d}
+img.slider-img{top:0;right:0;position:absolute}
+.out{opacity:0}
