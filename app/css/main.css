@@ -98,9 +98,9 @@ p.quien-somos {
   border: 3px solid #fff; }
 
 .icons-wrapper a {
-  width: 26%;
   border: 1px solid #eee;
-  margin: 1% 1%; }
+  margin: 1% 1%;
+  overflow: hidden; }
 
 .portfolio > .icons-wrapper a {
   margin: 0.2%; }
@@ -116,6 +116,12 @@ p.quien-somos {
 .about .icons-wrapper a {
   width: 48%;
   margin: 5px; }
+
+.icon.img {
+  padding: 0; }
+
+.section1 > .icons-wrapper a {
+  width: 26%; }
 
 .cta {
   margin: 3% auto 10%;
@@ -333,3 +339,7 @@ img.slider-img {
 
 .out {
   opacity: 0; }
+
+.sm {
+  width: 200px;
+  height: 250px; }

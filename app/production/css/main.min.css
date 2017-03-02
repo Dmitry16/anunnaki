@@ -945,11 +945,13 @@ p{font-weight:300}
 p.quien-somos{text-align:left}
 .quien-somos{padding:0 2%;columns:2 150px;column-rule:solid 1px coral;column-gap:1.5em}
 .button-more{margin:5% auto 2%;padding:1.5%;background:0 0;border:3px solid #fff}
-.icons-wrapper a{width:26%;border:1px solid #eee;margin:1%}
+.icons-wrapper a{border:1px solid #eee;margin:1%;overflow:hidden}
 .portfolio>.icons-wrapper a{margin:.2%}
 .icon{height:100%;background-color:rgba(233,240,246,.3);padding:8% 1% 5%}
 [class^=icon-]{font-size:4em}
 .about .icons-wrapper a{width:48%;margin:5px}
+.icon.img{padding:0}
+.section1>.icons-wrapper a{width:26%}
 .cta{margin:3% auto 10%;padding:1% 0 3%;background:rgba(255,153,115,.9);border:2px solid #fff;width:60%;text-align:center}
 .cta .cta-buttons-wrapper{display:flex;justify-content:center}
 .cta .cta-buttons-wrapper .cta-button{margin:1%;display:inline-block;float:left;background:0 0;color:#fff;border:2px solid #fff}
@@ -997,3 +999,4 @@ ul.main-nav li:hover{background:coral}
 ul.main-nav li:hover>a{font-weight:500;color:#315a7d}
 img.slider-img{top:0;right:0;position:absolute}
 .out{opacity:0}
+.sm{width:200px;height:250px}

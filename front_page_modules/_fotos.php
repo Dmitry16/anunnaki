@@ -6,33 +6,39 @@
 
       <div class="icons-wrapper">
         <a href="#categorias">
-          <div class="icon img">
-            <img src="img/online-marketing-1sm.jpg" alt="paginas web">
+          <div class="icon img sm">
+            <img src="<?php echo get_template_directory_uri() .
+            '/app/img/album/7.jpeg' ?>" alt="luminati">
           </div>
         </a>
         <a href="#marcas">
-          <div class="icon img">
-            <img src="img/online-marketing-2sm.jpg" alt="paginas web">
+          <div class="icon img sm">
+            <img src="<?php echo get_template_directory_uri() .
+            '/app/img/album/14.jpeg' ?>" alt="luminati">
           </div>
         </a>
         <a href="#dietas">
-          <div class="icon img">
-            <img src="img/online-marketing-3sm.jpg" alt="paginas web">
+          <div class="icon img sm">
+            <img src="<?php echo get_template_directory_uri() .
+            '/app/img/album/3.jpeg' ?>" alt="luminati">
           </div>
         </a>
         <a href="#dietas">
-          <div class="icon img">
-            <img src="img/online-marketing-4sm.jpg" alt="paginas web">
+          <div class="icon img sm">
+            <img src="<?php echo get_template_directory_uri() .
+            '/app/img/album/4.jpeg' ?>" alt="luminati">
           </div>
         </a>
         <a href="#dietas">
-          <div class="icon img">
-            <img src="img/online-marketing-5sm.jpg" alt="paginas web">
+          <div class="icon img sm">
+            <img src="<?php echo get_template_directory_uri() .
+            '/app/img/album/10.jpeg' ?>" alt="luminati">
           </div>
         </a>
         <a href="#dietas">
-          <div class="icon img">
-            <img src="img/online-marketing-5sm.jpg" alt="paginas web">
+          <div class="icon img sm">
+            <img src="<?php echo get_template_directory_uri() .
+            '/app/img/album/6.jpeg' ?>" alt="luminati">
           </div>
         </a>
       </div>

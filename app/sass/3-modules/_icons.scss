@@ -1,7 +1,9 @@
 .icons-wrapper a {
-	width: 26%;
+	//width: 26%;
 	border: 1px solid $c7;
 	margin: 1% 1%;
+	overflow: hidden;
+
 }
 .portfolio>.icons-wrapper a {
 	margin: 0.2%;
@@ -20,4 +22,8 @@
   margin: 5px;
 }
 .icon.img {
+	padding: 0;
+}
+.section1>.icons-wrapper a {
+	width: 26%;
 }
