@@ -56,12 +56,12 @@ p {
   font-size: 1.2em;
   font-weight: 300; }
 
-.flex-column, .section1, .ofertas, .about, .portfolio, .portfolio-wrapper {
+.flex-column, .section1, .ofertas, .about, .portfolio, .manifesto, .portfolio-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.section1, .ofertas, .about, .portfolio {
+.section1, .ofertas, .about, .portfolio, .manifesto {
   width: 100%;
   margin: 0% auto 10%;
   padding: 7% 0 5% 0;
@@ -82,13 +82,10 @@ p {
   text-align: center; }
 
 p.quien-somos {
-  text-align: left; }
+  text-align: center; }
 
-.quien-somos {
-  padding: 0 2%;
-  columns: 2 150px;
-  column-rule: solid 1px coral;
-  column-gap: 1.5em; }
+.quien-somos, .manifesto {
+  padding: 0 2%; }
 
 .button-more {
   margin: 5% auto 2%;
