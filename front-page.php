@@ -25,6 +25,8 @@
   </div>
 </div>
 
+<?php include('front_page_modules/_manifesto.php'); ?>
+
 <?php include('front_page_modules/_intereses.php'); ?>
 
 <section id="cta-section1" class="cta-section">
