@@ -34,13 +34,16 @@ let timer = window.setInterval(function() {
 
     } else if (i === img_arr.length && visible === false) {
       visible = true;
+      i = 0;
 
-    } else if (i > 0 && visible === true) {
-      i--;
-      img_arr[i].style.opacity = 0;
-
-    } else if (i === 0 && visible === true) {
+    } else if (i < img_arr.length && visible === true) {
+      for(let j=0; j < img_arr.length; j++) {
+        img_arr[i].style.opacity = 0;
+        i++;
+      }
+    } else if (i === img_arr.length && visible === true) {
       visible = false;
+      i = 0;
     }
 
   }, 2000);
