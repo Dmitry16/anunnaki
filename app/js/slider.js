@@ -1,61 +1,52 @@
+!function() {
 
-// let rightPosition = img_arr[i].getBoundingClientRect().right;
-// let imgWidth = img_arr[i].getBoundingClientRect().width;
-//
-// img_arr[i].style.right = (rightPosition - imgWidth*2) + 'px';
+  let img_arr = document.getElementsByClassName('slider-img');
 
-// let hero = document.querySelector('.hero');
-// let btn = document.createElement('button');
-// hero.appendChild(btn);
-//
-// btn.addEventListener('click',function() {
-//   sl();
-// });
+  //if (img_arr[i].className === 'slider-img out') {
+  let i=0,
+      visible= false;
 
-function al() {
+  let timer = window.setInterval(function() {
 
-}
-
-function sl() {
-  timer = window.setTimeout(al, 5000);
-}
-
-let img_arr = document.getElementsByClassName('slider-img');
-
-//if (img_arr[i].className === 'slider-img out') {
-let i=0,
-    visible= false;
-
-let timer = window.setInterval(function() {
-
-    if (i < img_arr.length && visible === false) {
-      img_arr[i].style.opacity = 1;
-      i++;
-
-    } else if (i === img_arr.length && visible === false) {
-      visible = true;
-      i = 0;
-
-    } else if (i < img_arr.length && visible === true) {
-      for(let j=0; j < img_arr.length; j++) {
-        img_arr[i].style.opacity = 0;
+      if (i < img_arr.length && visible === false) {
+        img_arr[i].style.opacity = 1;
         i++;
+
+      } else if (i === img_arr.length && visible === false) {
+        visible = true;
+        i = 0;
+
+      } else if (i < img_arr.length && visible === true) {
+        for(let j=0; j < img_arr.length; j++) {
+          img_arr[i].style.opacity = 0;
+          i++;
+        }
+      } else if (i === img_arr.length && visible === true) {
+        visible = false;
+        i = 0;
       }
-    } else if (i === img_arr.length && visible === true) {
-      visible = false;
-      i = 0;
+
+    }, 2000);
+
+}();
+
+!function () {
+
+  const arr_img = document.querySelector(".icon.img.sm");
+
+  document.addEventListener('click', function(e) {
+    if(e.target.tagName === 'IMG' ) {
+      let img = e.target;
+      let div = img.parentNode;
+      console.log(div);
+      let a = document.createElement('a');
+      a.className = "close";
+      a.textContent = "x";
+      a.setAttribute("href", "#wrapper-fotos");
+      console.log(a);
+      div.appendChild(a);
     }
 
-  }, 2000);
+  });
 
-
-//}
-
-
-// var j = -250;
-// while (j<0) {
-//   window.setTimeout(function() {
-//     img_arr[i].style.right = j + 'px';
-//   }, 1);
-//   j+=0.1;
-// }
+}();

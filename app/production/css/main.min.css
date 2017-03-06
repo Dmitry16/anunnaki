@@ -2,6 +2,7 @@
 .clearfix:after,.row .row.collapse:after,.row .row:after,.row:after{clear:both}
 h1,h2,h3,h4,h5,h6,p{text-rendering:optimizeLegibility}
 .button,.vevent abbr,a,button{text-decoration:none}
+.close,.icons-wrapper.fotos>a{pointer-events:auto}
 meta.foundation-version{font-family:"/5.2.2/"}
 meta.foundation-mq-small{font-family:"/only screen/";width:0}
 meta.foundation-mq-medium{font-family:"/only screen and (min-width:40.063em)/";width:40.063em}
@@ -999,4 +1000,9 @@ ul.main-nav li:hover{background:coral}
 ul.main-nav li:hover>a{font-weight:500;color:#315a7d}
 img.slider-img{top:0;right:0;position:absolute}
 .out{opacity:0}
+.icons-wrapper.fotos{position:relative}
 .sm{width:200px;height:250px}
+.img.sm:target{background:rgba(0,0,0,.8);position:absolute;padding:10%;top:0;left:0;width:100%;height:100%;overflow:hidden}
+.img.sm:target>img{width:50%;height:100%}
+.img.sm:target>.close{display:inline-block}
+.close{right:-1em;padding:.5em;position:absolute;background:rgba(255,255,255,.8);border-radius:50%;display:none}
