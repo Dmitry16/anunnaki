@@ -3,7 +3,7 @@
   let img_arr = document.getElementsByClassName('slider-img');
 
   //if (img_arr[i].className === 'slider-img out') {
-  let i=0,
+  let i=1,
       visible= false;
 
   let timer = window.setInterval(function() {
@@ -14,7 +14,7 @@
 
       } else if (i === img_arr.length && visible === false) {
         visible = true;
-        i = 0;
+        i = 1;
 
       } else if (i < img_arr.length && visible === true) {
         for(let j=0; j < img_arr.length; j++) {
@@ -23,7 +23,7 @@
         }
       } else if (i === img_arr.length && visible === true) {
         visible = false;
-        i = 0;
+        i = 1;
       }
 
     }, 2000);
