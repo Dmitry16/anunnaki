@@ -46,7 +46,6 @@
       console.log(a);
       div.appendChild(a);
     }
-
-  });
+  }); //end event listener
 
 }();
