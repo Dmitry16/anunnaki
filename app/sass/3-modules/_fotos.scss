@@ -34,19 +34,17 @@
   padding: 0;
   width: 1.2em;
   height: 1.2em;
+  display: none;
 }
 .close, .direct {
-  display: inline-block;
   color: darkred;
   pointer-events: auto;
   position: absolute;
   background: rgba(#fff,.8);
   border-radius: 50%;
-  display: none;
 }
 .direct {
   display: flex;
-  visibility: hidden;
   flex-direction: column;
   justify-content: center;
   top: 45%;
@@ -54,13 +52,19 @@
   height: 3em;
   font-size: 2em;
 }
+.off {
+  visibility: hidden;
+}
+.on {
+  visibility: visible;
+}
 #left {
   left: 0;
 }
 #right {
   right: 0;
 }
-.img.sm:target > .direct {
-  visibility: visible;
-  z-index: 99999;
-}
+// .img.sm:target .direct {
+//   visibility: visible;
+//   //z-index: 99999;
+// }
