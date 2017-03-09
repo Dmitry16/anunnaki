@@ -366,15 +366,37 @@ img.slider-img {
   display: inline-block; }
 
 .close {
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  color: darkred;
   top: 0;
   right: 0;
-  padding: 0em;
+  padding: 0;
+  width: 1.2em;
+  height: 1.2em; }
+
+.close, .direct {
+  display: inline-block;
+  color: darkred;
   pointer-events: auto;
   position: absolute;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   display: none; }
+
+.direct {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  top: 45%;
+  width: 3em;
+  height: 3em;
+  font-size: 2em; }
+
+#left {
+  left: 0; }
+
+#right {
+  right: 0; }
+
+.img.sm:target > .direct {
+  visibility: visible;
+  z-index: 99999; }
