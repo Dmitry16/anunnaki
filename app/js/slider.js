@@ -32,10 +32,6 @@
 
 !function () {
 
-  // sliderNav[0].style.visibility = "visible";
-  // sliderNav[0].style.zIndex = 1;
-  // sliderNav[1].style.visibility = "visible";
-  // sliderNav[1].style.zIndex = 1;
   function sliderNav(id, direction, state) {
     if(state === "on") {
       const nav = document.createElement('a');
@@ -83,20 +79,43 @@
   }
 function changePic(img, direction) {
   img.className = "front-pics";
-  console.log(img);
   if(direction === "left") {
-    // console.log('kuku');
-    let div = img.parentNode;
-    let prevDiv = img.parentNode.parentNode.previousElementSibling
-    .firstElementChild;
-    let prevImg = img.parentNode.parentNode.previousElementSibling
-    .firstElementChild.firstElementChild;
+    moveImg(img, "left");
+  }
+  if(direction === "right") {
+    moveImg(img, "right");
+  }
+}
+function moveImg(img, direction) {
+  let div = img.parentNode;
+  if(direction === "left") {
+    let prevA = div.parentNode.previousElementSibling;
+    let prevDiv = prevA.firstElementChild;
+    let prevImg = prevDiv.firstElementChild;
+    let divWrapper = prevA.parentNode;
     prevImg.className = "front-pics active";
 
+    divWrapper.removeChild(prevA);
+    divWrapper.appendChild(prevA);
+    div.insertBefore(prevImg, img);
     div.removeChild(img);
-    prevDiv.appendChild(img);
-    div.appendChild(prevImg);
-    console.log(prevImg);
+    let backImg = prevImg;
+    backImg.className = "front-pics active";
+    //prevDiv.appendChild(backImg);
+    console.log(prevDiv);
+    console.log(backImg);
+  }
+  if(direction === "right") {
+    let nextA = div.parentNode.nextElementSibling;
+    let nextDiv = nextA.firstElementChild;
+    let nextImg = nextDiv.firstElementChild;
+    let divWrapper = nextA.parentNode;
+    nextImg.className = "front-pics active";
+
+    divWrapper.removeChild(nextA);
+    divWrapper.appendChild(nextA);
+    div.insertBefore(nextImg, img);
+    div.removeChild(img);
   }
 }
   }); //end event listener
