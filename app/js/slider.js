@@ -30,29 +30,37 @@
 
 }();
 
-!function () {
-
-  function sliderNav(id, direction, state) {
-    if(state === "on") {
-      const nav = document.createElement('a');
-      nav.className = "direct on";
-      nav.id = id;
-      nav.textContent = direction;
-      return nav;
-    } else {
-      let nav = document.getElementById(id);
-      nav.parentNode.removeChild(nav);
-    }
-  }
-
-  document.addEventListener('click', function(e) {
+// !function () {
+//
+//   function sliderNav(id, direction, state) {
+//     if(state === "on") {
+//       const nav = document.createElement('a');
+//       nav.className = "direct on";
+//       nav.id = id;
+//       nav.textContent = direction;
+//       return nav;
+//     } else {
+//       let nav = document.getElementById(id);
+//       nav.parentNode.removeChild(nav);
+//     }
+//   }
+//
+const modal = document.getElementById('modal');
+function showModal() {
+    modal.style.opacity = 1;
+    modal.style.zIndex = 9;
+}
+function hideModal() {
+    modal.style.opacity = 0;
+    modal.style.zIndex = -1;
+}
+document.addEventListener('click', function(e) {
     let img = e.target;
     if(img.tagName === 'IMG' && img.className==="front-pics" ) {
-      let div = img.parentNode;
-
+      showModal();
     }
     if(e.target.className === "close") {
-
+      hideModal();
     }
   if(e.target.className === "direct on") {
 
@@ -62,24 +70,25 @@
       changePic(img, "right");
     }
   }
-function changePic(img, direction) {
-  img.className = "front-pics";
-  if(direction === "left") {
-    moveImg(img, "left");
-  }
-  if(direction === "right") {
-    moveImg(img, "right");
-  }
-}
-function moveImg(img, direction) {
-
-  if(direction === "left") {
-
-  }
-  if(direction === "right") {
-    
-  }
-}
-  }); //end event listener
-
-}();
+});
+// function changePic(img, direction) {
+//   img.className = "front-pics";
+//   if(direction === "left") {
+//     moveImg(img, "left");
+//   }
+//   if(direction === "right") {
+//     moveImg(img, "right");
+//   }
+// }
+// function moveImg(img, direction) {
+//
+//   if(direction === "left") {
+//
+//   }
+//   if(direction === "right") {
+//
+//   }
+// }
+//   }); //end event listener
+//
+// }();
