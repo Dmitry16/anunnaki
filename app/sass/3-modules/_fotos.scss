@@ -1,29 +1,20 @@
 .icons-wrapper.fotos {
-  position: relative;
-}
-.icons-wrapper.fotos > a {
-  pointer-events: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .sm {
   width: 200px;
   height:250px;
 }
-.img.sm:target {
-  background: rgba(0,0,0,.9);
-  position: absolute;
-  padding: 5% 0 3% 0;
-  top: 0em;
-  left: 0em;
-  width: 100%;
-  height: 100%;
+.img {
+  background: rgba(0,0,0,.1);
   overflow: hidden;
-  transition: 1s all;
-  //pointer-events: none;
+  pointer-events: auto;
+  width: 20%;
+  margin: 0.5%;
 }
 .img.sm:target > img {
-  // width: 50%;
-  height: 95%;
-  background-position: center;
+border: 3px solid red;
 }
 .img.sm:target > .close {
   display: inline-block;

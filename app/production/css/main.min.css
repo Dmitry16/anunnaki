@@ -998,11 +998,10 @@ ul.main-nav li:hover{background:coral}
 ul.main-nav li:hover>a{font-weight:500;color:#315a7d}
 img.slider-img{top:0;right:0;position:absolute}
 .out{opacity:0}
-.icons-wrapper.fotos{position:relative}
-.icons-wrapper.fotos>a{pointer-events:auto}
+.icons-wrapper.fotos{display:flex;flex-wrap:wrap}
 .sm{width:200px;height:250px}
-.img.sm:target{background:rgba(0,0,0,.9);position:absolute;padding:5% 0 3%;top:0;left:0;width:100%;height:100%;overflow:hidden;transition:1s all}
-.img.sm:target>img{height:95%;background-position:center}
+.img{background:rgba(0,0,0,.1);overflow:hidden;pointer-events:auto;width:20%;margin:.5%}
+.img.sm:target>img{border:3px solid red}
 .img.sm:target>.close{display:inline-block}
 .close{top:0;right:0;padding:0;width:1.2em;height:1.2em;display:none}
 .close,.direct{color:#8b0000;pointer-events:auto;position:absolute;background:rgba(255,255,255,.8);border-radius:50%}
