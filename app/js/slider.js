@@ -46,26 +46,35 @@
 //   }
 //
 const modal = document.getElementById('modal');
-function showModal() {
-    modal.style.opacity = 1;
-    modal.style.zIndex = 9;
+const modalImg = document.createElement("img");
+
+function showModal(img) {
+  modalImg.setAttribute("src", img.getAttribute("src"));
+  modalImg.setAttribute("class", "front-pics active");
+  modal.appendChild(modalImg);
+  modal.style.opacity = 1;
+  modal.style.zIndex = 9;
 }
 function hideModal() {
-    modal.style.opacity = 0;
-    modal.style.zIndex = -1;
+  modal.style.opacity = 0;
+  modal.style.zIndex = -1;
+  modal.removeChild(modalImg);
+}
+function prevImg(img) {
+  console.log(img.parentNode.previousElementSibling);
 }
 document.addEventListener('click', function(e) {
     let img = e.target;
     if(img.tagName === 'IMG' && img.className==="front-pics" ) {
-      showModal();
+      showModal(img);
     }
     if(e.target.className === "close") {
       hideModal();
     }
-  if(e.target.className === "direct on") {
+  if(e.target.className === "direct left") {
 
     if(e.target.id === "left") {
-      changePic(img, "left");
+      prevImg(img);
     } else {
       changePic(img, "right");
     }

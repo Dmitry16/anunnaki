@@ -30,14 +30,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   opacity: 0;
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.9);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  overflow: hidden;
+  text-align: center;
+}
+.front-pics.active {
+  margin: 5%;
+  width: 450px;
+  height: 600px;
 }
 .close {
   position: absolute;
@@ -61,8 +69,16 @@
  cursor: pointer;
 }
 .direct {
+  position: absolute;
+  top: 47%;
   line-height: 2em;
   width: 2em;
   height: 2em;
   font-size: 1.8em;
+}
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
 }

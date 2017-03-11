@@ -963,12 +963,13 @@ p{font-weight:300}
 .hero .hero-content{position:relative;max-width:20em;text-align:left}
 @media screen and (min-width:50em){.hero .hero-content{text-align:left}
 }
-.footer li,.footer p,h1.site-title,ul.main-nav li{text-align:center}
+.footer li,.footer p,.modal,h1.site-title,ul.main-nav li{text-align:center}
 .hero .hero-content p{position:absolute;top:1em;right:0;display:none;border:2px solid #fff;border-radius:70px 70px 70px 0;padding:7%;color:#ff0;background:rgba(0,0,0,.3)}
 .hero .hero-logo{margin:5% auto;width:7em}
 .points.section1{max-width:68em;margin-left:auto;margin-right:auto}
 .points.section1::after{display:table}
 .bullets{display:flex;flex-wrap:wrap;margin:1em 1em 1.5em;overflow:auto;padding:0}
+.img,.modal{overflow:hidden}
 .bullets .bullet{flex-basis:20em;flex-grow:1}
 .bullets .bullet-icon{background:#477DCA;border-radius:50%;float:left;height:3.5em;padding:.875em;width:3.5em}
 .bullets .bullet-icon-1{background:#477DCA}
@@ -1000,14 +1001,17 @@ ul.main-nav li:hover{background:coral}
 ul.main-nav li:hover>a{font-weight:500;color:#315a7d}
 img.slider-img{top:0;right:0;position:absolute}
 .icons-wrapper.fotos{position:relative;display:flex;flex-wrap:wrap}
-.close,.modal{position:absolute}
+.close,.direct,.modal{position:absolute}
 .sm{width:200px;height:250px}
-.img{background:rgba(0,0,0,.1);overflow:hidden;pointer-events:auto;width:20%;margin:.5%}
+.img{background:rgba(0,0,0,.1);pointer-events:auto;width:20%;margin:.5%}
 .img>img{transition:transform .5s}
 .img>img:hover{cursor:pointer;transform:scale(1.1)}
 .img:hover{box-shadow:0 0 10px 0 rgba(0,0,0,.7);border:1px solid #aaa}
-.modal{padding:1%;flex-direction:column;justify-content:center;background:rgba(0,0,0,.7);top:0;left:0;width:100%;height:100%;z-index:-1}
+.modal{padding:1%;flex-direction:column;justify-content:center;align-items:center;background:rgba(0,0,0,.9);top:0;left:0;width:100%;height:100%;z-index:-1}
+.front-pics.active{margin:5%;width:450px;height:600px}
 .close{top:2px;right:2px;width:1.2em;height:1.2em;font-size:1em;line-height:1.1em}
 .close,.direct{background:rgba(255,255,255,.2);color:#501500;padding:0;border-radius:50%}
 .close:hover,.direct:hover{background:rgba(255,255,255,.3);color:#ff5a1d;font-weight:700;cursor:pointer}
-.direct{line-height:2em;width:2em;height:2em;font-size:1.8em}
+.direct{top:47%;line-height:2em;width:2em;height:2em;font-size:1.8em}
+.left{left:10px}
+.right{right:10px}
