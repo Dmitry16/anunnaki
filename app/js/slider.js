@@ -30,13 +30,14 @@
 
 }();
 
-// !function () {
+!function () {
 
 const modal = document.getElementById('modal');
 const modalImg = document.createElement("img");
 let prevImg,
     nextImg,
     img;
+let show = true;
 
 function showPrevImg() {
   modal.removeChild(modalImg);
@@ -68,12 +69,16 @@ function getPrevImg(img) {
 function getNextImg(img) {
   if(img.parentNode.nextElementSibling !== null) {
     return nextImg = img.parentNode.nextElementSibling.firstElementChild;
+  } else if (img.parentNode.nextElementSibling === null && show === true) {
+    show = false;
+    return nextImg = img;
   } else {
     hideModal();
   }
 }
 
 function showModal() {
+  show = true;
   modalImg.setAttribute("src", img.getAttribute("src"));
   modalImg.setAttribute("class", "front-pics active");
   modal.appendChild(modalImg);
@@ -81,7 +86,7 @@ function showModal() {
   modal.style.zIndex = 9;
   prevImg = getPrevImg(img);
   nextImg = getNextImg(img);
-  console.log(prevImg);
+  console.log(img);
 }
 
 function hideModal() {
@@ -93,7 +98,7 @@ function hideModal() {
 document.addEventListener('click', function(e) {
     if(e.target.tagName === 'IMG' && e.target.className==="front-pics" ) {
       img = e.target;
-      showModal(img);
+      showModal();
     }
     if(e.target.className === "close") {
       hideModal();
@@ -108,5 +113,4 @@ document.addEventListener('click', function(e) {
   }
 });
 
-//
-// }();
+}();
