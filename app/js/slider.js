@@ -73,6 +73,7 @@ function getNextImg(img) {
     show = false;
     return nextImg = img;
   } else {
+
     hideModal();
   }
 }
