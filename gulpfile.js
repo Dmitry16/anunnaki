@@ -9,6 +9,7 @@ var gulp      	= require('gulp'),
 		clean 			= require('gulp-clean'),
 		rename			= require('gulp-rename'),
 		del					= require('del'),
+		babel 			=	require('gulp-babel'),
 		// imagemin		= require('gulp-imagemin'),
 		// pngquant		= require('imagemin-pngquant'),
 		// cache				= require('gulp-cache'),
@@ -80,6 +81,12 @@ gulp.task('sass:watch', ['browser-sync'], function(){
 	gulp.watch('app/sass/**/*.+(sass|scss)', ['concat-styles', browserSync.reload]);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
+});
+
+gulp.task("babel", function () {
+	return gulp.src("app/js/slider_react.js")
+	.pipe(babel())
+	.pipe(gulp.dest("app/production/js"));
 });
 
 gulp.task('default', function(){
