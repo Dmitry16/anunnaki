@@ -1,38 +1,84 @@
 .icons-wrapper.fotos {
   position: relative;
-}
-.icons-wrapper.fotos > a {
-  pointer-events: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .sm {
   width: 200px;
   height:250px;
 }
-.img.sm:target {
-  background: rgba(0,0,0,.8);
+.img {
+  background: rgba(0,0,0,.1);
+  overflow: hidden;
+  pointer-events: auto;
+  width: 20%;
+  margin: 0.5%;
+}
+.img > img {
+  transition: transform 0.5s;
+}
+.img > img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.img:hover {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+    border: 1px solid #aaa;
+}
+.modal {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background: rgba(0,0,0,.9);
   position: absolute;
-  padding: 10%;
-  top: 0em;
-  left: 0em;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
   overflow: hidden;
-  //pointer-events: none;
+  text-align: center;
 }
-.img.sm:target > img {
-  width: 50%;
-  height: 100%;
-}
-.img.sm:target > .close {
-  display: inline-block;
+.front-pics.active {
+  margin: 5%;
+  width: 450px;
+  height: 600px;
 }
 .close {
-  display: inline-block;
-  right: -1em;
-  padding: 0.5em;
-  pointer-events: auto;
   position: absolute;
-  background: rgba(#fff,.8);
+  top: 2px;
+  right: 2px;
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+.close, .direct {
+  background: rgba(#fff,.2);
+  color: darken(coral, 50%);
+  padding: 0;
   border-radius: 50%;
-  display: none;
+}
+.close:hover, .direct:hover {
+ background: rgba(#fff,.3);
+ color: darken(coral, 10%);
+ font-weight: bold;
+ cursor: pointer;
+}
+.direct {
+  position: absolute;
+  top: 47%;
+  line-height: 2em;
+  width: 2em;
+  height: 2em;
+  font-size: 1.8em;
+}
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
 }
